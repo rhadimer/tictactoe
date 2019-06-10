@@ -1,0 +1,304 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:GridExample"
+             x:Class="GridExample.MainPage">
+
+    <AbsoluteLayout>
+        <Image x:Name="BgImage" Source="https://3.bp.blogspot.com/-zK4hVduv-sg/W9GvX7d6aPI/AAAAAAAA9II/H3LEMvOg-0o5KJUJgKO1KN2rMijUHkjegCLcBGAs/s1600/Planet%2BSpace%2Bfor%2BiPhoneXSMAX-iPhoneXR.png"
+               Aspect="AspectFill"
+               AbsoluteLayout.LayoutBounds="0.0, 0.0, 1.0, 1.0"
+               AbsoluteLayout.LayoutFlags="All"
+               />
+        
+        <StackLayout  >
+            <!-- Place new controls here -->
+            <Label Text="Tic Tac Toe" 
+               HorizontalOptions="Center"
+               FontSize="50"
+                   TextColor="White">
+            </Label>
+
+            <Grid BackgroundColor="Gray"
+                  Margin="3">
+                
+                <Grid 
+                    Margin="3"
+                    ColumnSpacing="3"
+                    RowSpacing="3"
+                    x:Name="GridGame"
+                    >
+
+                    <Grid.ColumnDefinitions >
+                        <ColumnDefinition />
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="100"/>
+                        <RowDefinition Height="100"/>
+                        <RowDefinition Height="100"/>
+                    </Grid.RowDefinitions>
+
+                    <!--<Grid.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnTapped"/>
+                </Grid.GestureRecognizers>-->
+
+                    <StackLayout BackgroundColor="White" >
+                        <BoxView Color="white"
+                             WidthRequest="50"
+                             HeightRequest="50"
+                             HorizontalOptions="Center"
+                             VerticalOptions="Center"
+                             x:Name="box0_0"
+                             
+                             
+                     >
+                            <BoxView.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnTapped_box0_0"/>
+                            </BoxView.GestureRecognizers>
+
+                        </BoxView>
+
+
+                    </StackLayout>
+
+
+                    <StackLayout BackgroundColor="White"
+                             Grid.Column="1">
+
+                        <BoxView Color="White"
+                             WidthRequest="50"
+                             HeightRequest="50"
+                             Grid.Column="1"
+                             HorizontalOptions="Center"
+                             VerticalOptions="Center"
+                             x:Name="box0_1"
+                             
+                    >
+                            <BoxView.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnTapped_box0_1"/>
+                            </BoxView.GestureRecognizers>
+
+                        </BoxView>
+                    </StackLayout>
+
+
+
+                    <StackLayout BackgroundColor="White"
+                             Grid.Column="2">
+                        <BoxView Color="White"
+                             WidthRequest="50"
+                             HeightRequest="50"
+                             Grid.Column="2"
+                             HorizontalOptions="Center"
+                             VerticalOptions="Center"
+                             x:Name="box0_2"
+                             
+                    >
+                            <BoxView.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnTapped_box0_2"/>
+                            </BoxView.GestureRecognizers>
+                        </BoxView>
+                    </StackLayout>
+
+
+
+                    <StackLayout BackgroundColor="White"
+                             Grid.Row="1">
+
+                        <BoxView Color="White"
+                             WidthRequest="50"
+                             HeightRequest="50"
+                             Grid.Row="1"
+                             HorizontalOptions="Center"
+                             VerticalOptions="Center"
+                             x:Name="box1_0"
+                             
+                    >
+
+                            <BoxView.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnTapped_box1_0"/>
+                            </BoxView.GestureRecognizers>
+
+                        </BoxView>
+                    </StackLayout>
+
+
+
+                    <StackLayout BackgroundColor="White"
+                             Grid.Row="1"
+                             Grid.Column="1">
+
+
+                        <BoxView Color="white"
+                             WidthRequest="50"
+                             HeightRequest="50"
+                             Grid.Row="1"
+                             Grid.Column="1"
+                             HorizontalOptions="Center"
+                             VerticalOptions="Center"
+                             x:Name="box1_1"
+                             
+                             >
+                            <BoxView.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnTapped_box1_1"/>
+                            </BoxView.GestureRecognizers>
+
+                        </BoxView>
+                    </StackLayout>
+
+
+
+                    <StackLayout BackgroundColor="White"
+                             Grid.Row="1"
+                             Grid.Column="2">
+
+
+                        <BoxView Color="White"
+                             WidthRequest="50"
+                             HeightRequest="50"
+                             Grid.Row="1"
+                             Grid.Column="2"
+                             HorizontalOptions="Center"
+                             VerticalOptions="Center"
+                             x:Name="box1_2"
+                             
+                             >
+                            <BoxView.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnTapped_box1_2"/>
+                            </BoxView.GestureRecognizers>
+                        </BoxView>
+                    </StackLayout>
+
+
+
+                    <StackLayout BackgroundColor="White"
+                              Grid.Row="2">
+
+
+                        <BoxView Color="White"
+                             WidthRequest="50"
+                             HeightRequest="50"
+                             Grid.Row="2"
+                             HorizontalOptions="Center"
+                             VerticalOptions="Center"
+                             x:Name="box2_0"
+                             
+                             >
+
+                            <BoxView.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnTapped_box2_0"/>
+                            </BoxView.GestureRecognizers>
+
+                        </BoxView>
+                    </StackLayout>
+
+
+
+                    <StackLayout BackgroundColor="White"
+                             Grid.Row="2"
+                             Grid.Column="1">
+
+
+                        <BoxView Color="white"
+                             WidthRequest="50"
+                             HeightRequest="50"
+                             Grid.Row="2"
+                             Grid.Column="1"
+                             HorizontalOptions="Center"
+                             VerticalOptions="Center"
+                             x:Name="box2_1"
+                             
+                             >
+                            <BoxView.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnTapped_box2_1"/>
+                            </BoxView.GestureRecognizers>
+                        </BoxView>
+                    </StackLayout>
+
+
+
+                    <StackLayout BackgroundColor="White"
+                             Grid.Row="2"
+                             Grid.Column="2">
+
+
+                        <BoxView Color="white"
+                             WidthRequest="50"
+                             HeightRequest="50"
+                             Grid.Row="2"
+                             Grid.Column="2"
+                              HorizontalOptions="Center"
+                              VerticalOptions="Center"
+                             x:Name="box2_2"
+                             
+                             >
+                            <BoxView.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnTapped_box2_2"/>
+                            </BoxView.GestureRecognizers>
+
+                        </BoxView>
+
+
+
+                    </StackLayout>
+
+
+
+                </Grid>
+            </Grid>
+
+            <StackLayout  >
+                <Grid Margin="3"
+                  ColumnSpacing="3"
+                  RowSpacing="3">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+
+
+                    <Label Text="0"
+                           FontSize="50"
+                          TextColor="Red"
+                          HorizontalOptions="Center"
+                          x:Name="label_point_player1"
+                />
+
+                    <Label Text="o"
+                      FontSize="50"
+                      Grid.Row="1"
+                      HorizontalOptions="Center"
+                      x:Name="label_name_player1"
+                />
+
+                    <Label Text="0"
+                           FontSize="50"
+                       TextColor="Blue"
+                       Grid.Column="1"
+                       HorizontalOptions="Center"
+                       x:Name="label_point_player2"
+                 />
+
+                    <Label Text="x"
+                       FontSize="50"
+                       Grid.Column="1"
+                       Grid.Row="1"
+                       HorizontalOptions="Center" 
+                       x:Name="label_name_player2"
+                 />
+
+                </Grid>
+            </StackLayout>
+
+        </StackLayout>
+    </AbsoluteLayout>
+    
+
+</ContentPage>
