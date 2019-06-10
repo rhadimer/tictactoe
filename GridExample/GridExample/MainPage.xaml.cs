@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Plugin.SimpleAudioPlayer;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.IO;
@@ -26,7 +27,7 @@ namespace GridExample
 
             label_name_player1.TextColor = Color.Red;
             label_name_player2.TextColor = Color.Gray;
-            //Sound();
+            Sound();
 
         }
 
@@ -264,6 +265,7 @@ namespace GridExample
             var assembly = typeof(App).GetTypeInfo().Assembly;
             Stream audioStream = assembly.GetManifestResourceStream("GridExample.CentralCity.ogg");
             var audio = Plugin.SimpleAudioPlayer.CrossSimpleAudioPlayer.Current;
+            //var audio = CrossSimpleAudioPlayer.CreateSimpleAudioPlayer();
             audio.Load(audioStream);
             audio.Play();
         }
