@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GridExample.Menu">
+    <ContentPage.Content>
+        <AbsoluteLayout HorizontalOptions="Center">
+            <Image x:Name="BgImage" Source="low.jpg"
+               Aspect="AspectFill"
+               AbsoluteLayout.LayoutBounds="0.0, 0.0, 1.0, 1.0"
+               AbsoluteLayout.LayoutFlags="All"
+               
+        />
+            <StackLayout AbsoluteLayout.LayoutBounds="0.0, 0.0, 1.0, 1.0"
+                         AbsoluteLayout.LayoutFlags="All">
+                <Label Text="Welcome to"
+                        FontSize="50"
+                        FontAttributes="Bold"
+                        HorizontalOptions="Center"
+                       TextColor="White"/>
+
+                <Label Text="Tic Tac Toe!"
+                        FontSize="50"
+                        FontAttributes="Italic"
+                        HorizontalOptions="Center"
+                       TextColor="#F8B300"/>
+
+                <Label Text=""
+                        FontSize="30"
+                        FontAttributes="Bold"
+                        HorizontalOptions="Center"
+                       TextColor="White"/>
+                
+                <Button
+                        BackgroundColor="#09222C"
+                        BorderRadius="23"
+                        HeightRequest="46"
+                        WidthRequest="300"
+                        HorizontalOptions="Center"
+                        Text="New Game"
+                        TextColor="White"
+                        Margin="5"
+                        BorderColor="#F8B300"
+                        BorderWidth="5"
+                        x:Name="btnNewGame"
+                        Clicked="ClickbtnNewGame">
+                </Button>
+
+                <Button
+                        BackgroundColor="#09222C"
+                        BorderRadius="23"
+                        HeightRequest="46"
+                        WidthRequest="300"
+                        HorizontalOptions="Center"
+                        Text="Configuration"
+                        TextColor="White"
+                        Margin="5"
+                        BorderColor="#F8B300"
+                        BorderWidth="5"
+                        x:Name="btnConfig">
+                </Button>
+
+                <Button
+                        BackgroundColor="#09222C"
+                        BorderRadius="23"
+                        HeightRequest="46"
+                        WidthRequest="300"
+                        HorizontalOptions="Center"
+                        Text="Credits"
+                        TextColor="White"
+                        Margin="5"
+                        BorderColor="#F8B300"
+                        BorderWidth="5"
+                        x:Name="btnCredits">
+                </Button>
+
+                <Button
+                        BackgroundColor="#09222C"
+                        BorderRadius="23"
+                        HeightRequest="46"
+                        WidthRequest="300"
+                        HorizontalOptions="Center"
+                        Text="Exit"
+                        TextColor="White"
+                        Margin="5"
+                        BorderColor="#F8B300"
+                        BorderWidth="5"
+                        x:Name="btnExit">
+                </Button>
+
+            </StackLayout>
+        </AbsoluteLayout>
+       
+    </ContentPage.Content>
+</ContentPage>

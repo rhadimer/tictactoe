@@ -69,6 +69,7 @@
     <None Include="Entitlements.plist" />
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <BundleResource Include="Resources\Font\AgentOrange.ttf" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
@@ -138,9 +139,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\ChildsNightmare.ogg" />
+    <BundleResource Include="Resources\bgspace.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\CentralCity.ogg" />
+    <BundleResource Include="Resources\low.jpg" />
   </ItemGroup>
 </Project>
