@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 using Xamarin.Forms;
+using Xamarin.Forms.PlatformConfiguration;
 using Xamarin.Forms.Xaml;
 
 namespace GridExample
@@ -24,26 +26,43 @@ namespace GridExample
             await Navigation.PushModalAsync(new MainPage());
         }
 
-        //private void btnConfig(object sender, EventArgs e)
-        //{
+        private void ClickbtnExit(object sender, EventArgs e)
+        {
+            OnBackButtonPressed();
+        }
 
-        //}
-
-        //private void btnExit(object sender, EventArgs e)
-        //{
-
-        //}
 
         private void Sound()
         {
             var assembly = typeof(App).GetTypeInfo().Assembly;
             System.IO.Stream audioStream = assembly.GetManifestResourceStream("GridExample.GreatLittleChallenge.ogg");
             var audio = Plugin.SimpleAudioPlayer.CrossSimpleAudioPlayer.Current;
-            //var audio = CrossSimpleAudioPlayer.CreateSimpleAudioPlayer();
             audio.Load(audioStream);
             audio.Play();
             audio.Loop = true;
 
+        }
+       
+
+        [Obsolete]
+        protected override bool OnBackButtonPressed() // Metodo para salir de la aplicacion cuando se presiona el boton back en la pagina principa de la app
+        {
+            Device.BeginInvokeOnMainThread(async () =>
+            {
+                var result = await DisplayAlert("", "Would you like to exit from game?", "Yes", "No");
+                if (result)
+                {
+                    if (Device.OS == TargetPlatform.Android)
+                    {
+                        Android.OS.Process.KillProcess(Android.OS.Process.MyPid());
+                    }
+                    else if (Device.OS == TargetPlatform.iOS)
+                    {
+                        Thread.CurrentThread.Abort();
+                    }
+                }
+            });
+            return true;
         }
     }
 }

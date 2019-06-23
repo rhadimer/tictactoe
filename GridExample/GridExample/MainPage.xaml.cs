@@ -21,19 +21,46 @@ namespace GridExample
         private int pointsPlayer2 = 0;
         private bool winner = false;
 
-        //private Label Player_O = new Label {
-        //    Text = "O",
-        //    FontSize = 80,
-        //    VerticalOptions = LayoutOptions.CenterAndExpand,
-        //    HorizontalOptions = LayoutOptions.CenterAndExpand };
+        private Label move1 = new Label();
+        private Label move2 = new Label();
+        private Label move3 = new Label();
+        private Label move4 = new Label();
+        private Label move5 = new Label();
+        private Label move6 = new Label();
+        private Label move7 = new Label();
+        private Label move8 = new Label();
+        private Label move9 = new Label();
 
-        //private Label Player_X = new Label
-        //{
-        //    Text = "X",
-        //    FontSize = 80,
-        //    VerticalOptions = LayoutOptions.CenterAndExpand,
-        //    HorizontalOptions = LayoutOptions.CenterAndExpand
-        //};
+        //private StackLayout layout1 = new StackLayout();
+        //private StackLayout layout2 = new StackLayout();
+        //private StackLayout layout3 = new StackLayout();
+        //private StackLayout layout4 = new StackLayout();
+        //private StackLayout layout5 = new StackLayout();
+        //private StackLayout layout6 = new StackLayout();
+        //private StackLayout layout7= new StackLayout();
+        //private StackLayout layout8 = new StackLayout();
+        //private StackLayout layout9 = new StackLayout();
+
+        private int left1 ;
+        private int left2 ;
+        private int left3 ;
+        private int left4;
+        private int left5 ;
+        private int left6 ;
+        private int left7 ;
+        private int left8 ;
+        private int left9 ;
+
+        private int top1;
+        private int top2 ;
+        private int top3 ;
+        private int top4 ;
+        private int top5 ;
+        private int top6 ;
+        private int top7 ;
+        private int top8 ;
+        private int top9 ;
+
 
         public MainPage()
         {
@@ -121,6 +148,8 @@ namespace GridExample
         {
             if (box0_0.Color == Color.Blue && box0_1.Color == Color.Blue && box0_2.Color == Color.Blue)
             {
+
+
                 Winner_O();  
             }
             else if (box0_0.Color == Color.Red && box0_1.Color == Color.Red && box0_2.Color == Color.Red)
@@ -185,7 +214,16 @@ namespace GridExample
             }
             else if (step == 9 && winner == false)
             {
-                await DisplayAlert("Game Over", "Nobody won", "OK");
+                var gameOverPage = new GameOverPage();
+
+                gameOverPage.Init();
+
+                gameOverPage.GetGrid(move1, move2, move3, move4, move5, move6, move7, move8, move9,
+                    left1, left2, left3, left4, left5, left6, left7, left8, left8,
+                    top1, top2, top3, top4, top5, top6, top7, top8, top9);
+
+                await Navigation.PushModalAsync(gameOverPage);
+
                 Restart();
             }
 
@@ -221,7 +259,37 @@ namespace GridExample
             box2_1.IsEnabled = true;
             box2_2.IsEnabled = true;
 
-            
+            left1 = 0;
+            left2 = 0;
+            left3 = 0;
+            left4 = 0;
+            left5 = 0;
+            left6 = 0;
+            left7 = 0;
+            left8 = 0;
+            left9 = 0;
+
+            top1 = 0;
+            top2 = 0;
+            top3 = 0;
+            top4 = 0;
+            top5 = 0;
+            top6 = 0;
+            top7 = 0;
+            top8 = 0;
+            top9 = 0;
+
+            move1 = new Label();
+            move2 = new Label();
+            move3 = new Label();
+            move4 = new Label();
+            move5 = new Label();
+            move6 = new Label();
+            move7 = new Label();
+            move8 = new Label();
+            move9 = new Label();
+
+
         }
 
         private void Turn()
@@ -289,14 +357,6 @@ namespace GridExample
             audio.Play();
             //audio.Loop = true;
 
-            //while (audio.CurrentPosition <= 26)
-            //{
-            //    if (audio.CurrentPosition == 26)
-            //    {
-            //        audio.Play();
-            //    }
-            //}
-
         }
 
         private void Move(BoxView box, StackLayout layout, int left, int top)
@@ -316,6 +376,11 @@ namespace GridExample
 
                 GridGame.Children.Add(Player_O, left, top);
                 layout.Children.Add(Player_O);
+
+                move1 = Player_O;
+                //layout1 = layout;
+                left1 = left;
+                top1 = top;
 
                 Player_O.TextColor = Color.Blue;
                 
@@ -338,6 +403,12 @@ namespace GridExample
                 GridGame.Children.Add(Player_X, left, top);
                 layout.Children.Add(Player_X);
 
+                move2 = Player_X;
+                //layout2 = layout;
+                left2 = left;
+                top2 = top;
+
+
                 Player_X.TextColor = Color.Red;
 
                 box.Color = Color.Red;
@@ -358,6 +429,11 @@ namespace GridExample
 
                 GridGame.Children.Add(Player_O, left, top);
                 layout.Children.Add(Player_O);
+
+                move3 = Player_O;
+                //layout3 = layout;
+                left3 = left;
+                top3 = top;
 
                 Player_O.TextColor = Color.Blue;
 
@@ -380,6 +456,11 @@ namespace GridExample
                 GridGame.Children.Add(Player_X, left, top);
                 layout.Children.Add(Player_X);
 
+                move4 = Player_X;
+                //layout4 = layout;
+                left4 = left;
+                top4 = top;
+
                 Player_X.TextColor = Color.Red;
 
                 box.Color = Color.Red;
@@ -400,6 +481,11 @@ namespace GridExample
 
                 GridGame.Children.Add(Player_O, left, top);
                 layout.Children.Add(Player_O);
+
+                move5 = Player_O;
+               // layout5 = layout;
+                left5 = left;
+                top5 = top;
 
                 Player_O.TextColor = Color.Blue;
 
@@ -422,6 +508,11 @@ namespace GridExample
                 GridGame.Children.Add(Player_X, left, top);
                 layout.Children.Add(Player_X);
 
+                move6 = Player_X;
+                //layout6 = layout;
+                left6 = left;
+                top6 = top;
+
                 Player_X.TextColor = Color.Red;
 
                 box.Color = Color.Red;
@@ -443,6 +534,11 @@ namespace GridExample
                 GridGame.Children.Add(Player_O, left, top);
                 layout.Children.Add(Player_O);
 
+                move7 = Player_O;
+                //layout7 = layout;
+                left7 = left;
+                top7 = top;
+
                 Player_O.TextColor = Color.Blue;
 
                 box.Color = Color.Blue;
@@ -462,6 +558,11 @@ namespace GridExample
 
                 GridGame.Children.Add(Player_X, left, top);
                 layout.Children.Add(Player_X);
+
+                move8 = Player_X;
+                //layout8 = layout;
+                left8 = left;
+                top8 = top;
 
                 Player_X.TextColor = Color.Red;
 
@@ -483,6 +584,11 @@ namespace GridExample
                 GridGame.Children.Add(Player_O, left, top);
                 layout.Children.Add(Player_O);
 
+                move9 = Player_O;
+               // layout9 = layout;
+                left9 = left;
+                top9 = top;
+
                 Player_O.TextColor = Color.Blue;
 
                 box.Color = Color.Blue;
@@ -495,7 +601,16 @@ namespace GridExample
 
         private async void Winner_O()
         {
-            await DisplayAlert("Game Over", "The player O is the winner", "OK");
+            var winnerOPage = new WinnerOPage();
+
+            winnerOPage.Init();
+
+            winnerOPage.GetGrid(move1, move2, move3, move4, move5, move6, move7, move8, move9,
+                left1, left2, left3, left4, left5, left6, left7, left8, left8,
+                top1, top2, top3, top4, top5, top6, top7, top8, top9);
+
+            await Navigation.PushModalAsync(winnerOPage);
+
             pointsPlayer1++;
             winner = true;
             Restart();
@@ -504,7 +619,16 @@ namespace GridExample
 
         private async void Winner_X()
         {
-            await DisplayAlert("Game Over", "The player X is the winner", "OK");
+            var winnerXPage = new WinnerXPage();
+
+            winnerXPage.Init();
+
+            winnerXPage.GetGrid(move1, move2, move3, move4, move5, move6, move7, move8, move9,
+                left1, left2, left3, left4, left5, left6, left7, left8, left8,
+                top1, top2, top3, top4, top5, top6, top7, top8, top9);
+
+            await Navigation.PushModalAsync(winnerXPage);
+
             pointsPlayer2++;
             winner = true;
             Restart();

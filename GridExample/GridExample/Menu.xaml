@@ -84,7 +84,8 @@
                         Margin="5"
                         BorderColor="#F8B300"
                         BorderWidth="5"
-                        x:Name="btnExit">
+                        x:Name="btnExit"
+                    Clicked="ClickbtnExit">
                 </Button>
 
             </StackLayout>

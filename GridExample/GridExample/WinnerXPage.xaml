@@ -1,0 +1,304 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GridExample.WinnerXPage">
+    <ContentPage.Content>
+        <AbsoluteLayout HorizontalOptions="Center">
+            <Image x:Name="BgImage" Source="low.jpg"
+               Aspect="AspectFill"
+               AbsoluteLayout.LayoutBounds="0.0, 0.0, 1.0, 1.0"
+               AbsoluteLayout.LayoutFlags="All"/>
+
+            <StackLayout AbsoluteLayout.LayoutBounds="0.0, 0.0, 1.0, 1.0"
+                         AbsoluteLayout.LayoutFlags="All">
+
+                <Label Text="Game Over"
+                        FontSize="50"
+                        FontAttributes="Bold"
+                        HorizontalOptions="Center"
+                       TextColor="White"/>
+
+                <Label Text="Winner"
+                        FontSize="50"
+                        FontAttributes="Bold"
+                        HorizontalOptions="Center"
+                       TextColor="#F8B300"/>
+
+                <Label Text="Player X"
+                        FontSize="50"
+                        FontAttributes="Bold"
+                        HorizontalOptions="Center"
+                       TextColor="#F8B300"/>
+
+                <Label Text=""
+                        FontSize="30"
+                        FontAttributes="Bold"
+                        HorizontalOptions="Center"
+                       TextColor="White"/>
+
+
+
+                <Grid 
+                    Margin="3"
+                    ColumnSpacing="3"
+                    RowSpacing="3"
+                    x:Name="GridGameWinner_X"
+                    Padding="3"
+                    HorizontalOptions="Center"
+                    Opacity="0.5"
+
+                    >
+
+                    <Grid.ColumnDefinitions >
+                        <ColumnDefinition Width="50" />
+                        <ColumnDefinition Width="50"/>
+                        <ColumnDefinition Width="50"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                    </Grid.RowDefinitions>
+
+                    <!--<Grid.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnTapped"/>
+                </Grid.GestureRecognizers>-->
+
+                    <StackLayout BackgroundColor="White"
+                                 x:Name="stackLayout0_0">
+                        <BoxView Color="white"
+                             WidthRequest="50"
+                             HeightRequest="50"
+                             HorizontalOptions="Center"
+                             VerticalOptions="Center"
+                             x:Name="box0_0"
+                             
+                             
+                     >
+
+
+                        </BoxView>
+
+
+                    </StackLayout>
+
+
+                    <StackLayout BackgroundColor="White"
+                                 Grid.Column="1"
+                                 x:Name="stackLayout0_1">
+
+                        <BoxView Color="White"
+                             WidthRequest="50"
+                             HeightRequest="50"
+                             Grid.Column="1"
+                             HorizontalOptions="Center"
+                             VerticalOptions="Center"
+                             x:Name="box0_1"
+                             
+                    >
+
+
+                        </BoxView>
+                    </StackLayout>
+
+
+
+                    <StackLayout BackgroundColor="White"
+                                 Grid.Column="2"
+                                 x:Name="stackLayout0_2">
+                        <BoxView Color="White"
+                             WidthRequest="50"
+                             HeightRequest="50"
+                             Grid.Column="2"
+                             HorizontalOptions="Center"
+                             VerticalOptions="Center"
+                             x:Name="box0_2"
+                             
+                    >
+
+                        </BoxView>
+                    </StackLayout>
+
+
+
+                    <StackLayout BackgroundColor="White"
+                                 Grid.Row="1"
+                                 x:Name="stackLayout1_0">
+
+                        <BoxView Color="White"
+                             WidthRequest="50"
+                             HeightRequest="50"
+                             Grid.Row="1"
+                             HorizontalOptions="Center"
+                             VerticalOptions="Center"
+                             x:Name="box1_0"
+                             
+                    >
+
+
+
+                        </BoxView>
+                    </StackLayout>
+
+
+
+                    <StackLayout BackgroundColor="White"
+                                 Grid.Row="1"
+                                 Grid.Column="1"
+                                 x:Name="stackLayout1_1">
+
+
+                        <BoxView Color="white"
+                             WidthRequest="50"
+                             HeightRequest="50"
+                             Grid.Row="1"
+                             Grid.Column="1"
+                             HorizontalOptions="Center"
+                             VerticalOptions="Center"
+                             x:Name="box1_1"
+                             
+                             >
+
+
+                        </BoxView>
+                    </StackLayout>
+
+
+
+                    <StackLayout BackgroundColor="White"
+                                 Grid.Row="1"
+                                 Grid.Column="2"
+                                 x:Name="stackLayout1_2">
+
+
+                        <BoxView Color="White"
+                             WidthRequest="50"
+                             HeightRequest="50"
+                             Grid.Row="1"
+                             Grid.Column="2"
+                             HorizontalOptions="Center"
+                             VerticalOptions="Center"
+                             x:Name="box1_2"
+                             
+                             >
+
+                        </BoxView>
+                    </StackLayout>
+
+
+
+                    <StackLayout BackgroundColor="White"
+                                 Grid.Row="2"
+                                 x:Name="stackLayout2_0">
+
+
+                        <BoxView Color="White"
+                             WidthRequest="50"
+                             HeightRequest="50"
+                             Grid.Row="2"
+                             HorizontalOptions="Center"
+                             VerticalOptions="Center"
+                             x:Name="box2_0"
+                             
+                             >
+
+
+
+                        </BoxView>
+                    </StackLayout>
+
+
+
+                    <StackLayout BackgroundColor="White"
+                                 Grid.Row="2"
+                                 Grid.Column="1"
+                                 x:Name="stackLayout2_1">
+
+
+                        <BoxView Color="white"
+                             WidthRequest="50"
+                             HeightRequest="50"
+                             Grid.Row="2"
+                             Grid.Column="1"
+                             HorizontalOptions="Center"
+                             VerticalOptions="Center"
+                             x:Name="box2_1"
+                             
+                             >
+
+                        </BoxView>
+                    </StackLayout>
+
+
+
+                    <StackLayout BackgroundColor="White"
+                                 Grid.Row="2"
+                                 Grid.Column="2"
+                                 x:Name="stackLayout2_2">
+
+
+                        <BoxView Color="white"
+                             WidthRequest="50"
+                             HeightRequest="50"
+                             Grid.Row="2"
+                             Grid.Column="2"
+                              HorizontalOptions="Center"
+                              VerticalOptions="Center"
+                             x:Name="box2_2"
+                             
+                             >
+
+                        </BoxView>
+
+
+
+                    </StackLayout>
+
+
+
+                </Grid>
+
+
+                <Label Text=""
+                        FontSize="30"
+                        FontAttributes="Bold"
+                        HorizontalOptions="Center"
+                       TextColor="White"/>
+
+                <Button
+                        BackgroundColor="#09222C"
+                        BorderRadius="23"
+                        HeightRequest="46"
+                        WidthRequest="300"
+                        HorizontalOptions="Center"
+                        Text="play again"
+                        TextColor="White"
+                        Margin="5"
+                        BorderColor="#F8B300"
+                        BorderWidth="5"
+                        x:Name="btnPlayAgain"
+                        Clicked="btnPlayAgain_Click">
+                </Button>
+
+                <Button
+                        BackgroundColor="#09222C"
+                        BorderRadius="23"
+                        HeightRequest="46"
+                        WidthRequest="300"
+                        HorizontalOptions="Center"
+                        Text="return to the menu"
+                        TextColor="White"
+                        Margin="5"
+                        BorderColor="#F8B300"
+                        BorderWidth="5"
+                        x:Name="btnReturMenu"
+                        Clicked="btnReturMenu_Click">
+                </Button>
+
+            </StackLayout>
+
+
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>

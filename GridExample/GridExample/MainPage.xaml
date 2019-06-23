@@ -18,7 +18,8 @@
                     HorizontalOptions="Center"
                     FontSize="50"
                     FontAttributes="Italic"
-                    TextColor="#F8B300">
+                    TextColor="#F8B300"
+                   x:Name="Title">
                 <!--<Label.FontFamily>
                     <OnPlatform x:TypeArguments="x:String">
                         <On Platform="iOS" Value="AgentOrange" />
@@ -27,16 +28,14 @@
                     </OnPlatform>
                 </Label.FontFamily>-->
             </Label>
-
-            <Grid BackgroundColor="Gray"
-                  Margin="3">
-                
-                <Grid 
+            
+            <Grid 
                     Margin="3"
                     ColumnSpacing="3"
                     RowSpacing="3"
                     x:Name="GridGame"
-                    >
+                    Padding="15"
+                    HorizontalOptions="Center">
 
                     <Grid.ColumnDefinitions >
                         <ColumnDefinition />
@@ -61,10 +60,8 @@
                              HeightRequest="100"
                              HorizontalOptions="Center"
                              VerticalOptions="Center"
-                             x:Name="box0_0"
-                             
-                             
-                     >
+                             x:Name="box0_0">
+                            
                             <BoxView.GestureRecognizers>
                                 <TapGestureRecognizer Tapped="OnTapped_box0_0"/>
                             </BoxView.GestureRecognizers>
@@ -85,9 +82,8 @@
                              Grid.Column="1"
                              HorizontalOptions="Center"
                              VerticalOptions="Center"
-                             x:Name="box0_1"
-                             
-                    >
+                             x:Name="box0_1">
+                            
                             <BoxView.GestureRecognizers>
                                 <TapGestureRecognizer Tapped="OnTapped_box0_1"/>
                             </BoxView.GestureRecognizers>
@@ -106,9 +102,8 @@
                              Grid.Column="2"
                              HorizontalOptions="Center"
                              VerticalOptions="Center"
-                             x:Name="box0_2"
-                             
-                    >
+                             x:Name="box0_2">
+                            
                             <BoxView.GestureRecognizers>
                                 <TapGestureRecognizer Tapped="OnTapped_box0_2"/>
                             </BoxView.GestureRecognizers>
@@ -127,9 +122,8 @@
                              Grid.Row="1"
                              HorizontalOptions="Center"
                              VerticalOptions="Center"
-                             x:Name="box1_0"
-                             
-                    >
+                             x:Name="box1_0">
+                            
 
                             <BoxView.GestureRecognizers>
                                 <TapGestureRecognizer Tapped="OnTapped_box1_0"/>
@@ -153,9 +147,8 @@
                              Grid.Column="1"
                              HorizontalOptions="Center"
                              VerticalOptions="Center"
-                             x:Name="box1_1"
-                             
-                             >
+                             x:Name="box1_1">
+                            
                             <BoxView.GestureRecognizers>
                                 <TapGestureRecognizer Tapped="OnTapped_box1_1"/>
                             </BoxView.GestureRecognizers>
@@ -178,9 +171,8 @@
                              Grid.Column="2"
                              HorizontalOptions="Center"
                              VerticalOptions="Center"
-                             x:Name="box1_2"
-                             
-                             >
+                             x:Name="box1_2">
+                            
                             <BoxView.GestureRecognizers>
                                 <TapGestureRecognizer Tapped="OnTapped_box1_2"/>
                             </BoxView.GestureRecognizers>
@@ -200,9 +192,8 @@
                              Grid.Row="2"
                              HorizontalOptions="Center"
                              VerticalOptions="Center"
-                             x:Name="box2_0"
-                             
-                             >
+                             x:Name="box2_0">
+                            
 
                             <BoxView.GestureRecognizers>
                                 <TapGestureRecognizer Tapped="OnTapped_box2_0"/>
@@ -226,9 +217,8 @@
                              Grid.Column="1"
                              HorizontalOptions="Center"
                              VerticalOptions="Center"
-                             x:Name="box2_1"
-                             
-                             >
+                             x:Name="box2_1">
+                            
                             <BoxView.GestureRecognizers>
                                 <TapGestureRecognizer Tapped="OnTapped_box2_1"/>
                             </BoxView.GestureRecognizers>
@@ -250,9 +240,8 @@
                              Grid.Column="2"
                               HorizontalOptions="Center"
                               VerticalOptions="Center"
-                             x:Name="box2_2"
-                             
-                             >
+                             x:Name="box2_2" 
+                                 >
                             <BoxView.GestureRecognizers>
                                 <TapGestureRecognizer Tapped="OnTapped_box2_2"/>
                             </BoxView.GestureRecognizers>
@@ -263,13 +252,12 @@
 
                     </StackLayout>
 
-
-
                 </Grid>
-            </Grid>
+            
 
             <Frame BackgroundColor="White"
-                   Opacity="0.5">
+                   Opacity="0.5"
+                   Padding="15">
                 <StackLayout  >
                     <Grid Margin="3"
                   ColumnSpacing="3"
