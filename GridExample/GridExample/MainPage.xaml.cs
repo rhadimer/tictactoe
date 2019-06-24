@@ -68,7 +68,10 @@ namespace GridExample
 
             label_name_player1.TextColor = Color.Blue;
             label_name_player2.TextColor = Color.Gray;
-        
+
+            framePointO.BorderColor = Color.Blue;
+            framePointX.BorderColor = Color.Gray;
+
             //Sound();
 
         }
@@ -249,6 +252,8 @@ namespace GridExample
             label_name_player2.TextColor = Color.Gray;
             label_name_player1.TextColor = Color.Blue;
 
+            framePointO.BorderColor = Color.Blue;
+
             box0_0.IsEnabled = true;
             box0_1.IsEnabled = true;
             box0_2.IsEnabled = true;
@@ -298,52 +303,80 @@ namespace GridExample
             { 
                 label_name_player2.TextColor = Color.Red;
                 label_name_player1.TextColor = Color.Gray;
+
+                framePointX.BorderColor = Color.Red;
+                framePointO.BorderColor = Color.Gray;
+                
             }
             else if (step == 1)
             {  
                 label_name_player1.TextColor = Color.Blue;
                 label_name_player2.TextColor = Color.Gray;
+
+                framePointO.BorderColor = Color.Blue;
+                framePointX.BorderColor = Color.Gray;
             }
             else if (step == 2)
             {               
                 label_name_player2.TextColor = Color.Red;
                 label_name_player1.TextColor = Color.Gray;
+
+                framePointX.BorderColor = Color.Red;
+                framePointO.BorderColor = Color.Gray;
             }
             else if (step == 3)
             {
                 
                 label_name_player1.TextColor = Color.Blue;
                 label_name_player2.TextColor = Color.Gray;
+
+                framePointO.BorderColor = Color.Blue;
+                framePointX.BorderColor = Color.Gray;
             }
             else if (step == 4)
             {
                 
                 label_name_player2.TextColor = Color.Red;
                 label_name_player1.TextColor = Color.Gray;
+
+                framePointX.BorderColor = Color.Red;
+                framePointO.BorderColor = Color.Gray;
             }
             else if (step == 5)
             {
                 
                 label_name_player1.TextColor = Color.Blue;
                 label_name_player2.TextColor = Color.Gray;
+
+                framePointO.BorderColor = Color.Blue;
+                framePointX.BorderColor = Color.Gray;
             }
             else if (step == 6)
             {
                 
                 label_name_player2.TextColor = Color.Red;
                 label_name_player1.TextColor = Color.Gray;
+
+                framePointX.BorderColor = Color.Red;
+                framePointO.BorderColor = Color.Gray;
             }
             else if (step == 7)
             {
                 
                 label_name_player1.TextColor = Color.Blue;
                 label_name_player2.TextColor = Color.Gray;
+
+                framePointO.BorderColor = Color.Blue;
+                framePointX.BorderColor = Color.Gray;
             }
             else if (step == 8)
             {
                 
                 label_name_player2.TextColor = Color.Red;
                 label_name_player1.TextColor = Color.Gray;
+
+                framePointX.BorderColor = Color.Red;
+                framePointO.BorderColor = Color.Gray;
             }
         }
 
