@@ -11,17 +11,34 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="blip.mp3" />
+    <None Remove="blip2.mp3" />
     <None Remove="CentralCity.ogg" />
+    <None Remove="coin.mp3" />
     <None Remove="GreatLittleChallenge.ogg" />
+    <None Remove="positive_complete_bright.mp3" />
+    <None Remove="positive_complete_bright_01.mp3" />
+    <None Remove="shoothit.mp3" />
+    <None Remove="shoothit1.mp3" />
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include="blip.mp3" />
+    <EmbeddedResource Include="blip2.mp3" />
     <EmbeddedResource Include="CentralCity.ogg" />
+    <EmbeddedResource Include="coin.mp3" />
     <EmbeddedResource Include="GreatLittleChallenge.ogg" />
+    <EmbeddedResource Include="bubblepop.mp3" />
+    <EmbeddedResource Include="positive_complete_bright.mp3" />
+    <EmbeddedResource Include="positive_complete_bright_01.mp3" />
+    <EmbeddedResource Include="shoothit.mp3" />
+    <EmbeddedResource Include="shoothit1.mp3" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Xam.Plugin.SimpleAudioPlayer" Version="1.3.0" />
+    <PackageReference Include="Xamarin.FFImageLoading" Version="2.4.11.982" />
+    <PackageReference Include="Xamarin.FFImageLoading.Svg.Forms" Version="2.4.11.982" />
     <PackageReference Include="Xamarin.Forms" Version="4.0.0.304370-pre8" />
     <PackageReference Include="Xamarin.Essentials" Version="1.0.1" />
   </ItemGroup>

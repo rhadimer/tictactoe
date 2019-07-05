@@ -16,13 +16,24 @@
                         FontSize="50"
                         FontAttributes="Bold"
                         HorizontalOptions="Center"
-                       TextColor="White"/>
+                       TextColor="White"
+                       Style="{StaticResource Font-2}"/>
 
-                <Label Text="Tic Tac Toe!"
+                <Label Text="Tic Tac"
                         FontSize="50"
                         FontAttributes="Italic"
                         HorizontalOptions="Center"
-                       TextColor="#F8B300"/>
+                       TextColor="#F8B300"
+                       Style="{StaticResource Font-1}"/>
+
+                <Label Text="Toe!"
+                        FontSize="50"
+                        FontAttributes="Italic"
+                        HorizontalOptions="Center"
+                       TextColor="#F8B300"
+                       Style="{StaticResource Font-1}"/>
+
+                
 
                 <Label Text=""
                         FontSize="30"
@@ -70,6 +81,7 @@
                         Margin="5"
                         BorderColor="#F8B300"
                         BorderWidth="5"
+                        Clicked="ClickbtnCredits"
                         x:Name="btnCredits">
                 </Button>
 

@@ -16,13 +16,29 @@
                         FontSize="50"
                         FontAttributes="Bold"
                         HorizontalOptions="Center"
-                       TextColor="White"/>
+                       TextColor="White"
+                       Style="{StaticResource Font-2}"/>
 
-                <Label Text="Nobody won"
+                <Label Text="Nobody"
                         FontSize="50"
                         FontAttributes="Bold"
                         HorizontalOptions="Center"
-                       TextColor="White"/>
+                       TextColor="#F8B300"
+                       Style="{StaticResource Font-1}"/>
+
+                <Label Text="Won"
+                        FontSize="50"
+                        FontAttributes="Bold"
+                        HorizontalOptions="Center"
+                       TextColor="#F8B300"
+                       Style="{StaticResource Font-1}"/>
+
+                <Label Text="OX"
+                        FontSize="50"
+                        FontAttributes="Bold"
+                        HorizontalOptions="Center"
+                       TextColor="White"
+                       Style="{StaticResource Font-1}"/>
 
 
                 <Label Text=""

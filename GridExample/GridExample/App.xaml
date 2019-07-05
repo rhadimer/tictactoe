@@ -3,6 +3,53 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="GridExample.App">
     <Application.Resources>
+        
+        <ResourceDictionary>
+            <Style x:Key="Font-1" TargetType="Label">
+                <Setter Property="Label.FontFamily">
+                    <OnPlatform x:TypeArguments="x:String">
+                        <!--<OnPlatform.iOS>AgentOrange</OnPlatform.iOS>
+                        <OnPlatform.Android>font/AgentOrange.ttf#AgentOrange</OnPlatform.Android>-->
+                        <On Platform="iOS" Value="AgentOrange" />
+                        <On Platform="Android" Value="Font/AgentOrange.ttf#Agent Orange" />
+                    </OnPlatform>
+                </Setter>
+            </Style>
 
+            <Style x:Key="Font-2" TargetType="Label">
+                <Setter Property="Label.FontFamily">
+                    <OnPlatform x:TypeArguments="x:String">
+                        <!--<OnPlatform.iOS>AgentOrange</OnPlatform.iOS>
+                        <OnPlatform.Android>font/AgentOrange.ttf#AgentOrange</OnPlatform.Android>-->
+                        <On Platform="iOS" Value="TheBredanDemo" />
+                        <On Platform="Android" Value="Font/TheBredanDemo.otf#The Bredan" />
+                    </OnPlatform>
+                </Setter>
+            </Style>
+
+            <Style x:Key="Font-3" TargetType="Label">
+                <Setter Property="Label.FontFamily">
+                    <OnPlatform x:TypeArguments="x:String">
+                        <!--<OnPlatform.iOS>AgentOrange</OnPlatform.iOS>
+                        <OnPlatform.Android>font/AgentOrange.ttf#AgentOrange</OnPlatform.Android>-->
+                        <On Platform="iOS" Value="digital-7" />
+                        <On Platform="Android" Value="Font/digital-7.ttf#Digital-7" />
+                    </OnPlatform>
+                </Setter>
+            </Style>
+
+            <Style x:Key="Font-digital" TargetType="Label">
+                <Setter Property="Label.FontFamily">
+                    <OnPlatform x:TypeArguments="x:String">
+                        <!--<OnPlatform.iOS>AgentOrange</OnPlatform.iOS>
+                        <OnPlatform.Android>font/AgentOrange.ttf#AgentOrange</OnPlatform.Android>-->
+                        <On Platform="iOS" Value="DS-DIGI" />
+                        <On Platform="Android" Value="Font/DSDIGI.TTF#DS-Digital" />
+                    </OnPlatform>
+                </Setter>
+            </Style>
+
+        </ResourceDictionary>
+        
     </Application.Resources>
 </Application>

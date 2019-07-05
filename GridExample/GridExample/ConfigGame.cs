@@ -8,34 +8,21 @@ namespace GridExample
 {
     public class ConfigGame
     {
-        //public ConfigGame(string filename)
-        //{
-        //    GetStreamFromFile(filename);
+        public ConfigGame()
+        {
+           
 
-        //}
+        }
 
-        //private Stream GetStreamFromFile(string filename)
-        //{
-        //    var assembly = typeof(App).GetTypeInfo().Assembly;
-        //    var stream = assembly.GetManifestResourceStream("GridExample." + filename);
-        //    return stream;
-        //}
+        public void Sound(string filename, bool loop)
+        {
+            var assembly = typeof(App).GetTypeInfo().Assembly;
+            System.IO.Stream audioStream = assembly.GetManifestResourceStream("GridExample." + filename);
+            var audio = Plugin.SimpleAudioPlayer.CrossSimpleAudioPlayer.Current;
+            audio.Load(audioStream);
+            audio.Play();
+            audio.Loop = loop;
 
-        //public void Sound()
-        //{
-            
-        //    var audio = Plugin.SimpleAudioPlayer.CrossSimpleAudioPlayer.Current;
-        //    audio.Load(GetStreamFromFile(filename));
-        //    audio.Play();
-
-        //    //while (audio.CurrentPosition <= 26)
-        //    //{
-        //    //    if (audio.CurrentPosition == 26)
-        //    //    {
-        //    //        audio.Play();
-        //    //    }
-        //    //}
-
-        //}
+        }
     }
 }

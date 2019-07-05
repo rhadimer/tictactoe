@@ -8,6 +8,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+using Xamarin.Essentials;
 
 namespace GridExample
 {
@@ -73,11 +74,12 @@ namespace GridExample
             framePointX.BorderColor = Color.Gray;
 
             //Sound();
+            //DisplayAlert("Warning!", "This game must be played with two people", "OK");
 
         }
 
         private void OnTapped_box0_0(object sender, EventArgs e)
-        {
+        { 
             Move(box0_0, stackLayout0_0, 0, 0);
             Turn();
             step++;
@@ -392,17 +394,24 @@ namespace GridExample
 
         }
 
+        [Obsolete]
         private void Move(BoxView box, StackLayout layout, int left, int top)
         {
             if (step == 0)
             {
+                var duration = TimeSpan.FromMilliseconds(200);
+                Vibration.Vibrate(duration);
+
                 var Player_O = new Label
                 {
                     Text = "O",
-                    FontSize = 80,
                     VerticalOptions = LayoutOptions.CenterAndExpand,
-                    HorizontalOptions = LayoutOptions.CenterAndExpand
+                    HorizontalOptions = LayoutOptions.CenterAndExpand,
                 };
+
+                Device.OnPlatform(iOS: () => Player_O.Font = Font.OfSize("AgentOrange", NamedSize.Large));
+                Device.OnPlatform(Android: () => Player_O.Font = Font.OfSize("Font/AgentOrange.ttf#Agent Orange", NamedSize.Large));
+                Player_O.FontSize = 75;
 
                 box.IsVisible = false;
                 box.IsEnabled = false;
@@ -415,20 +424,26 @@ namespace GridExample
                 left1 = left;
                 top1 = top;
 
-                Player_O.TextColor = Color.Blue;
+                Player_O.TextColor = Color.FromHex("#2ECCFA"); // Blue
                 
                 box.Color = Color.Blue;
                
             }
             else if (step == 1)
             {
+                var duration = TimeSpan.FromMilliseconds(200);
+                Vibration.Vibrate(duration);
+
                 var Player_X = new Label
                 {
                     Text = "X",
-                    FontSize = 80,
                     VerticalOptions = LayoutOptions.CenterAndExpand,
                     HorizontalOptions = LayoutOptions.CenterAndExpand
                 };
+
+                Device.OnPlatform(iOS: () => Player_X.Font = Font.OfSize("AgentOrange", NamedSize.Large));
+                Device.OnPlatform(Android: () => Player_X.Font = Font.OfSize("Font/AgentOrange.ttf#Agent Orange", NamedSize.Large));
+                Player_X.FontSize = 75;
 
                 box.IsVisible = false;
                 box.IsEnabled = false;
@@ -449,13 +464,19 @@ namespace GridExample
             }
             else if (step == 2)
             {
+                var duration = TimeSpan.FromMilliseconds(200);
+                Vibration.Vibrate(duration);
+
                 var Player_O = new Label
                 {
                     Text = "O",
-                    FontSize = 80,
                     VerticalOptions = LayoutOptions.CenterAndExpand,
                     HorizontalOptions = LayoutOptions.CenterAndExpand
                 };
+
+                Device.OnPlatform(iOS: () => Player_O.Font = Font.OfSize("AgentOrange", NamedSize.Large));
+                Device.OnPlatform(Android: () => Player_O.Font = Font.OfSize("Font/AgentOrange.ttf#Agent Orange", NamedSize.Large));
+                Player_O.FontSize = 75;
 
                 box.IsVisible = false;
                 box.IsEnabled = false;
@@ -468,20 +489,26 @@ namespace GridExample
                 left3 = left;
                 top3 = top;
 
-                Player_O.TextColor = Color.Blue;
+                Player_O.TextColor = Color.FromHex("#2ECCFA"); // Blue
 
                 box.Color = Color.Blue;
 
             }
             else if (step == 3)
             {
+                var duration = TimeSpan.FromMilliseconds(200);
+                Vibration.Vibrate(duration);
+
                 var Player_X = new Label
                 {
                     Text = "X",
-                    FontSize = 80,
                     VerticalOptions = LayoutOptions.CenterAndExpand,
                     HorizontalOptions = LayoutOptions.CenterAndExpand
                 };
+
+                Device.OnPlatform(iOS: () => Player_X.Font = Font.OfSize("AgentOrange", NamedSize.Large));
+                Device.OnPlatform(Android: () => Player_X.Font = Font.OfSize("Font/AgentOrange.ttf#Agent Orange", NamedSize.Large));
+                Player_X.FontSize = 75;
 
                 box.IsVisible = false;
                 box.IsEnabled = false;
@@ -501,13 +528,19 @@ namespace GridExample
             }
             else if (step == 4)
             {
+                var duration = TimeSpan.FromMilliseconds(200);
+                Vibration.Vibrate(duration);
+
                 var Player_O = new Label
                 {
                     Text = "O",
-                    FontSize = 80,
                     VerticalOptions = LayoutOptions.CenterAndExpand,
                     HorizontalOptions = LayoutOptions.CenterAndExpand
                 };
+
+                Device.OnPlatform(iOS: () => Player_O.Font = Font.OfSize("AgentOrange", NamedSize.Large));
+                Device.OnPlatform(Android: () => Player_O.Font = Font.OfSize("Font/AgentOrange.ttf#Agent Orange", NamedSize.Large));
+                Player_O.FontSize = 75;
 
                 box.IsVisible = false;
                 box.IsEnabled = false;
@@ -520,20 +553,26 @@ namespace GridExample
                 left5 = left;
                 top5 = top;
 
-                Player_O.TextColor = Color.Blue;
+                Player_O.TextColor = Color.FromHex("#2ECCFA"); // Blue
 
                 box.Color = Color.Blue;
 
             }
             else if (step == 5)
             {
+                var duration = TimeSpan.FromMilliseconds(200);
+                Vibration.Vibrate(duration);
+
                 var Player_X = new Label
                 {
                     Text = "X",
-                    FontSize = 80,
                     VerticalOptions = LayoutOptions.CenterAndExpand,
                     HorizontalOptions = LayoutOptions.CenterAndExpand
                 };
+
+                Device.OnPlatform(iOS: () => Player_X.Font = Font.OfSize("AgentOrange", NamedSize.Large));
+                Device.OnPlatform(Android: () => Player_X.Font = Font.OfSize("Font/AgentOrange.ttf#Agent Orange", NamedSize.Large));
+                Player_X.FontSize = 75;
 
                 box.IsVisible = false;
                 box.IsEnabled = false;
@@ -553,13 +592,19 @@ namespace GridExample
             }
             else if (step == 6)
             {
+                var duration = TimeSpan.FromMilliseconds(200);
+                Vibration.Vibrate(duration);
+
                 var Player_O = new Label
                 {
                     Text = "O",
-                    FontSize = 80,
                     VerticalOptions = LayoutOptions.CenterAndExpand,
                     HorizontalOptions = LayoutOptions.CenterAndExpand
                 };
+
+                Device.OnPlatform(iOS: () => Player_O.Font = Font.OfSize("AgentOrange", NamedSize.Large));
+                Device.OnPlatform(Android: () => Player_O.Font = Font.OfSize("Font/AgentOrange.ttf#Agent Orange", NamedSize.Large));
+                Player_O.FontSize = 75;
 
                 box.IsVisible = false;
                 box.IsEnabled = false;
@@ -572,19 +617,25 @@ namespace GridExample
                 left7 = left;
                 top7 = top;
 
-                Player_O.TextColor = Color.Blue;
+                Player_O.TextColor = Color.FromHex("#2ECCFA"); // Blue
 
                 box.Color = Color.Blue;
             }
             else if (step == 7)
             {
+                var duration = TimeSpan.FromMilliseconds(200);
+                Vibration.Vibrate(duration);
+
                 var Player_X = new Label
                 {
                     Text = "X",
-                    FontSize = 80,
                     VerticalOptions = LayoutOptions.CenterAndExpand,
                     HorizontalOptions = LayoutOptions.CenterAndExpand
                 };
+
+                Device.OnPlatform(iOS: () => Player_X.Font = Font.OfSize("AgentOrange", NamedSize.Large));
+                Device.OnPlatform(Android: () => Player_X.Font = Font.OfSize("Font/AgentOrange.ttf#Agent Orange", NamedSize.Large));
+                Player_X.FontSize = 75;
 
                 box.IsVisible = false;
                 box.IsEnabled = false;
@@ -603,13 +654,19 @@ namespace GridExample
             }
             else if (step == 8)
             {
+                var duration = TimeSpan.FromMilliseconds(200);
+                Vibration.Vibrate(duration);
+
                 var Player_O = new Label
                 {
                     Text = "O",
-                    FontSize = 80,
                     VerticalOptions = LayoutOptions.CenterAndExpand,
                     HorizontalOptions = LayoutOptions.CenterAndExpand
                 };
+
+                Device.OnPlatform(iOS: () => Player_O.Font = Font.OfSize("AgentOrange", NamedSize.Large));
+                Device.OnPlatform(Android: () => Player_O.Font = Font.OfSize("Font/AgentOrange.ttf#Agent Orange", NamedSize.Large));
+                Player_O.FontSize = 75;
 
                 box.IsVisible = false;
                 box.IsEnabled = false;
@@ -622,13 +679,12 @@ namespace GridExample
                 left9 = left;
                 top9 = top;
 
-                Player_O.TextColor = Color.Blue;
+                Player_O.TextColor = Color.FromHex("#2ECCFA"); // Blue
 
                 box.Color = Color.Blue;
             }
 
             box.IsEnabled = false;
-
 
         }
 
@@ -675,5 +731,20 @@ namespace GridExample
             label_point_player2.Text = pointsPlayer2.ToString();
         }
 
+        private async void OnTapped_btnBack(object sender, EventArgs e)
+        {
+            bool answer = await DisplayAlert("Exit", "Sure you want to leave this game.", "Yes", "No");
+
+            if (answer == true)
+            {
+                await Navigation.PopModalAsync();
+            }
+            
+        }
+
+        private void OnTapped_btnSetting(object sender, EventArgs e)
+        {
+            //...
+        }
     }
 }

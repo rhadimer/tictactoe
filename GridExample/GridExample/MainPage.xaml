@@ -2,7 +2,8 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:GridExample"
-             x:Class="GridExample.MainPage">
+             x:Class="GridExample.MainPage"
+             xmlns:ffimageloading="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms">
 
     <AbsoluteLayout >
         <Image x:Name="BgImage" Source="low.jpg"
@@ -11,23 +12,72 @@
                AbsoluteLayout.LayoutFlags="All"
                
         />
-        
-        <StackLayout  >
+
+        <!--<ffimageloading:SvgCachedImage HeightRequest="30" HorizontalOptions="FillAndExpand" VerticalOptions="Center" Aspect="AspectFill" x:Name="imageWave" Source="logo.png" Margin="0"/>-->
+
+        <StackLayout>
+            <!--******************** NAVIGATION AND TITLE BAR ********************--> 
+            <StackLayout>
+                <Grid
+                     Padding="5"
+                     HorizontalOptions="Center"> 
+                    
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="250"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+
+                    <Image x:Name="btnBack"
+                        Source="btnback.png"
+                               HorizontalOptions="FillAndExpand"
+                                 HeightRequest="35"
+                                 WidthRequest="35">
+
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnTapped_btnBack"/>
+                        </Image.GestureRecognizers>
+                    </Image>
+
+                    <Label Text="Tic Tac Toe!" 
+                            HorizontalOptions="Center"
+                            FontSize="25"
+                            FontAttributes="Italic"
+                            TextColor="#F8B300"
+                            x:Name="Title"
+                           Grid.Column="1"
+                            Style="{StaticResource Font-1}">
+                    </Label>
+
+
+                    <Image x:Name="btnSetting"
+                                 Grid.Column="2"
+                                 Source="btnsetting.png"
+                                 HorizontalOptions="FillAndExpand"
+                                  HeightRequest="35"
+                                 WidthRequest="35">
+                        
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnTapped_btnSetting"/>
+                        </Image.GestureRecognizers>
+                        
+                    </Image>
+
+                </Grid>
+                <!--********************END NAVIGATION AND TITLE BAR ********************-->
+
+            </StackLayout>
             <!-- Place new controls here -->
-            <Label Text="Tic Tac Toe!" 
+            <!--<Label Text="Tic Tac Toe!" 
                     HorizontalOptions="Center"
-                    FontSize="50"
+                    FontSize="40"
                     FontAttributes="Italic"
                     TextColor="#F8B300"
-                   x:Name="Title">
-                <!--<Label.FontFamily>
-                    <OnPlatform x:TypeArguments="x:String">
-                        <On Platform="iOS" Value="AgentOrange" />
-                        <On Platform="Android" Value="AgentOrange.ttf#AgentOrange" />
-                        
-                    </OnPlatform>
-                </Label.FontFamily>-->
-            </Label>
+                   x:Name="Title"
+                   Style="{StaticResource Font-1}">
+            </Label>-->
+
             
             <Grid 
                     Margin="3"
@@ -254,7 +304,7 @@
 
                 </Grid>
             
-
+                <!--Points and turns-->
             <Frame BackgroundColor="#C6C6C6"
                    Padding="15"
                    Opacity="0.5">
@@ -270,20 +320,21 @@
                     <StackLayout Orientation="Horizontal" >
                         <Frame HorizontalOptions="FillAndExpand"
                                x:Name="framePointO"
-                               
                                HasShadow="True">
                             <StackLayout>
                                 <Label Text="0"
                                           FontSize="50"
                                           TextColor="Blue"
                                           HorizontalOptions="Center"
-                                          x:Name="label_point_player1"/>
+                                          x:Name="label_point_player1"
+                                          Style="{StaticResource Font-3}"/>
 
                                 <Label Text="o"
                                           FontSize="50"
                                           Grid.Row="1"
                                           HorizontalOptions="Center"
-                                          x:Name="label_name_player1"/>
+                                          x:Name="label_name_player1"
+                                       Style="{StaticResource Font-1}"/>
                             </StackLayout>
 
                         </Frame>
@@ -298,14 +349,16 @@
                                    TextColor="Red"
                                    Grid.Column="1"
                                    HorizontalOptions="Center"
-                                   x:Name="label_point_player2"/>
+                                   x:Name="label_point_player2"
+                                   Style="{StaticResource Font-3}"    />
 
                                 <Label Text="x"
                                    FontSize="50"
                                    Grid.Column="1"
                                    Grid.Row="1"
                                    HorizontalOptions="Center" 
-                                   x:Name="label_name_player2"/>
+                                   x:Name="label_name_player2"
+                                       Style="{StaticResource Font-1}"/>
                             </StackLayout>
                         </Frame>
                         
@@ -316,11 +369,7 @@
                                FontSize="20"
                                HorizontalOptions="Center"/>
                     </StackLayout>
-                       
 
-
-
-                    
                 </StackLayout>
             </Frame>
             
