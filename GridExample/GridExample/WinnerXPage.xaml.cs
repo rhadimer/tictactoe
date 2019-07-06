@@ -16,15 +16,15 @@ namespace GridExample
         {
             InitializeComponent();
         }
-        private Label Move1 = new Label();
-        private Label Move2 = new Label();
-        private Label Move3 = new Label();
-        private Label Move4 = new Label();
-        private Label Move5 = new Label();
-        private Label Move6 = new Label();
-        private Label Move7 = new Label();
-        private Label Move8 = new Label();
-        private Label Move9 = new Label();
+        private Image Move1 = new Image();
+        private Image Move2 = new Image();
+        private Image Move3 = new Image();
+        private Image Move4 = new Image();
+        private Image Move5 = new Image();
+        private Image Move6 = new Image();
+        private Image Move7 = new Image();
+        private Image Move8 = new Image();
+        private Image Move9 = new Image();
 
         //private StackLayout Layout1 = new StackLayout();
         //private StackLayout Layout2 = new StackLayout();
@@ -56,7 +56,7 @@ namespace GridExample
         private int Top8;
         private int Top9;
 
-        public void GetGrid(Label move1, Label move2, Label move3, Label move4, Label move5, Label move6, Label move7, Label move8, Label move9,
+        public void GetGrid(Image move1, Image move2, Image move3, Image move4, Image move5, Image move6, Image move7, Image move8, Image move9,
                             int left1, int left2, int left3, int left4, int left5, int left6, int left7, int left8, int left9,
                             int top1, int top2, int top3, int top4, int top5, int top6, int top7, int top8, int top9)
         {
@@ -124,51 +124,51 @@ namespace GridExample
             box2_1.IsEnabled = false;
             box2_2.IsEnabled = false;
 
-            Move1.FontSize = 50;
-            Move2.FontSize = 50;
-            Move3.FontSize = 50;
-            Move4.FontSize = 50;
-            Move5.FontSize = 50;
-            Move6.FontSize = 50;
-            Move7.FontSize = 50;
-            Move8.FontSize = 50;
-            Move9.FontSize = 50;
+            Move1.WidthRequest = 50;
+            Move2.WidthRequest = 50;
+            Move3.WidthRequest = 50;
+            Move4.WidthRequest = 50;
+            Move5.WidthRequest = 50;
+            Move6.WidthRequest = 50;
+            Move7.WidthRequest = 50;
+            Move8.WidthRequest = 50;
+            Move9.WidthRequest = 50;
 
             GridGameWinner_X.Children.Add(Move1, Top1, Left1); //le pase los parametros al reves porque la jugada salia al reves. lol
-            //Layout1.Children.Add(Move1);
-            Move1.TextColor = Color.Blue;
+                                                               //Layout1.Children.Add(Move1);
+                                                               // Move1.TextColor = Color.Blue;
 
             GridGameWinner_X.Children.Add(Move2, Top2, Left2);
             //Layout2.Children.Add(Move2);
-            Move2.TextColor = Color.Red;
+            //Move2.TextColor = Color.Red;
 
             GridGameWinner_X.Children.Add(Move3, Top3, Left3);
             //Layout3.Children.Add(Move3);
-            Move3.TextColor = Color.Blue;
+            //Move3.TextColor = Color.Blue;
 
             GridGameWinner_X.Children.Add(Move4, Top4, Left4);
             //Layout4.Children.Add(Move4);
-            Move4.TextColor = Color.Red;
+            // Move4.TextColor = Color.Red;
 
             GridGameWinner_X.Children.Add(Move5, Top5, Left5);
             //Layout5.Children.Add(Move5);
-            Move5.TextColor = Color.Blue;
+            //Move5.TextColor = Color.Blue;
 
             GridGameWinner_X.Children.Add(Move6, Top6, Left6);
             //Layout6.Children.Add(Move6);
-            Move6.TextColor = Color.Red;
+            // Move6.TextColor = Color.Red;
 
             GridGameWinner_X.Children.Add(Move7, Top7, Left7);
             //Layout7.Children.Add(Move7);
-            Move7.TextColor = Color.Blue;
+            //Move7.TextColor = Color.Blue;
 
             GridGameWinner_X.Children.Add(Move8, Top8, Left8);
             //Layout8.Children.Add(Move8);
-            Move8.TextColor = Color.Red;
+            //Move8.TextColor = Color.Red;
 
             GridGameWinner_X.Children.Add(Move9, Top9, Left9);
             //Layout9.Children.Add(Move9);
-            Move9.TextColor = Color.Blue;
+            //Move9.TextColor = Color.Blue;
 
         }
 

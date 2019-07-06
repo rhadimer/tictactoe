@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GridExample.Android", "Grid
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GridExample.iOS", "GridExample\GridExample.iOS\GridExample.iOS.csproj", "{9EF5B3A4-D3BA-4A84-82BF-0EEBB2E18543}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GridExample", "GridExample\GridExample\GridExample.csproj", "{561883FB-7DAE-401E-9A53-2E4C79F0D29C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GridExample", "GridExample\GridExample\GridExample.csproj", "{561883FB-7DAE-401E-9A53-2E4C79F0D29C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

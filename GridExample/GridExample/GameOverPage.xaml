@@ -4,7 +4,7 @@
              x:Class="GridExample.GameOverPage">
     <ContentPage.Content>
         <AbsoluteLayout HorizontalOptions="Center">
-            <Image x:Name="BgImage" Source="low.jpg"
+            <Image x:Name="BgImage" Source="low2.jpg"
                Aspect="AspectFill"
                AbsoluteLayout.LayoutBounds="0.0, 0.0, 1.0, 1.0"
                AbsoluteLayout.LayoutFlags="All"/>
@@ -33,12 +33,27 @@
                        TextColor="#F8B300"
                        Style="{StaticResource Font-1}"/>
 
-                <Label Text="OX"
+                <StackLayout Orientation="Horizontal" 
+                             HorizontalOptions="Center">
+                    <Image 
+                        WidthRequest="80"
+                        HorizontalOptions="FillAndExpand"
+                        Source="o2.png"
+                       />
+                    
+                    <Image 
+                        WidthRequest="80"
+                        HorizontalOptions="FillAndExpand"
+                         Source="x.png"
+                       />
+                </StackLayout>
+
+                <!--<Label Text="OX"
                         FontSize="50"
                         FontAttributes="Bold"
                         HorizontalOptions="Center"
                        TextColor="White"
-                       Style="{StaticResource Font-1}"/>
+                       Style="{StaticResource Font-1}"/>-->
 
 
                 <Label Text=""
@@ -281,9 +296,9 @@
                         WidthRequest="300"
                         HorizontalOptions="Center"
                         Text="play again"
-                        TextColor="White"
+                        TextColor="#F8B300"
                         Margin="5"
-                        BorderColor="#F8B300"
+                        BorderColor="#27B7D5"
                         BorderWidth="5"
                         x:Name="btnPlayAgain"
                         Clicked="btnPlayAgain_Click">
@@ -296,9 +311,9 @@
                         WidthRequest="300"
                         HorizontalOptions="Center"
                         Text="return to the menu"
-                        TextColor="White"
+                        TextColor="#F8B300"
                         Margin="5"
-                        BorderColor="#F8B300"
+                        BorderColor="#27B7D5"
                         BorderWidth="5"
                         x:Name="btnReturMenu"
                         Clicked="btnReturMenu_Click">

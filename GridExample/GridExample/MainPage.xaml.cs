@@ -22,15 +22,15 @@ namespace GridExample
         private int pointsPlayer2 = 0;
         private bool winner = false;
 
-        private Label move1 = new Label();
-        private Label move2 = new Label();
-        private Label move3 = new Label();
-        private Label move4 = new Label();
-        private Label move5 = new Label();
-        private Label move6 = new Label();
-        private Label move7 = new Label();
-        private Label move8 = new Label();
-        private Label move9 = new Label();
+        private Image move1 = new Image();
+        private Image move2 = new Image();
+        private Image move3 = new Image();
+        private Image move4 = new Image();
+        private Image move5 = new Image();
+        private Image move6 = new Image();
+        private Image move7 = new Image();
+        private Image move8 = new Image();
+        private Image move9 = new Image();
 
         //private StackLayout layout1 = new StackLayout();
         //private StackLayout layout2 = new StackLayout();
@@ -67,10 +67,10 @@ namespace GridExample
         {
             InitializeComponent();
 
-            label_name_player1.TextColor = Color.Blue;
+            label_name_player1.TextColor = Color.FromHex("#27B7D5");  // Blue
             label_name_player2.TextColor = Color.Gray;
 
-            framePointO.BorderColor = Color.Blue;
+            framePointO.BorderColor = Color.FromHex("#27B7D5");  // Blue
             framePointX.BorderColor = Color.Gray;
 
             //Sound();
@@ -252,9 +252,9 @@ namespace GridExample
 
             label_name_player1.TextColor = Color.Gray;
             label_name_player2.TextColor = Color.Gray;
-            label_name_player1.TextColor = Color.Blue;
+            label_name_player1.TextColor = Color.FromHex("#27B7D5");  // Blue
 
-            framePointO.BorderColor = Color.Blue;
+            framePointO.BorderColor = Color.FromHex("#27B7D5");  // Blue
 
             box0_0.IsEnabled = true;
             box0_1.IsEnabled = true;
@@ -286,15 +286,15 @@ namespace GridExample
             top8 = 0;
             top9 = 0;
 
-            move1 = new Label();
-            move2 = new Label();
-            move3 = new Label();
-            move4 = new Label();
-            move5 = new Label();
-            move6 = new Label();
-            move7 = new Label();
-            move8 = new Label();
-            move9 = new Label();
+            move1 = new Image();
+            move2 = new Image();
+            move3 = new Image();
+            move4 = new Image();
+            move5 = new Image();
+            move6 = new Image();
+            move7 = new Image();
+            move8 = new Image();
+            move9 = new Image();
 
 
         }
@@ -303,81 +303,81 @@ namespace GridExample
         {
             if (step == 0)
             { 
-                label_name_player2.TextColor = Color.Red;
+                label_name_player2.TextColor = Color.FromHex("#F03838"); //Red
                 label_name_player1.TextColor = Color.Gray;
 
-                framePointX.BorderColor = Color.Red;
+                framePointX.BorderColor = Color.FromHex("#F03838"); //Red 
                 framePointO.BorderColor = Color.Gray;
                 
             }
             else if (step == 1)
             {  
-                label_name_player1.TextColor = Color.Blue;
+                label_name_player1.TextColor = Color.FromHex("#27B7D5");  // Blue
                 label_name_player2.TextColor = Color.Gray;
 
-                framePointO.BorderColor = Color.Blue;
+                framePointO.BorderColor = Color.FromHex("#27B7D5");  // Blue
                 framePointX.BorderColor = Color.Gray;
             }
             else if (step == 2)
             {               
-                label_name_player2.TextColor = Color.Red;
+                label_name_player2.TextColor = Color.FromHex("#F03838"); //Red 
                 label_name_player1.TextColor = Color.Gray;
 
-                framePointX.BorderColor = Color.Red;
+                framePointX.BorderColor = Color.FromHex("#F03838"); //Red 
                 framePointO.BorderColor = Color.Gray;
             }
             else if (step == 3)
             {
                 
-                label_name_player1.TextColor = Color.Blue;
+                label_name_player1.TextColor = Color.FromHex("#27B7D5");  // Blue
                 label_name_player2.TextColor = Color.Gray;
 
-                framePointO.BorderColor = Color.Blue;
+                framePointO.BorderColor = Color.FromHex("#27B7D5");  // Blue
                 framePointX.BorderColor = Color.Gray;
             }
             else if (step == 4)
             {
                 
-                label_name_player2.TextColor = Color.Red;
+                label_name_player2.TextColor = Color.FromHex("#F03838"); //Red 
                 label_name_player1.TextColor = Color.Gray;
 
-                framePointX.BorderColor = Color.Red;
+                framePointX.BorderColor = Color.FromHex("#F03838"); //Red 
                 framePointO.BorderColor = Color.Gray;
             }
             else if (step == 5)
             {
                 
-                label_name_player1.TextColor = Color.Blue;
+                label_name_player1.TextColor = Color.FromHex("#27B7D5");  // Blue
                 label_name_player2.TextColor = Color.Gray;
 
-                framePointO.BorderColor = Color.Blue;
+                framePointO.BorderColor = Color.FromHex("#27B7D5");  // Blue
                 framePointX.BorderColor = Color.Gray;
             }
             else if (step == 6)
             {
                 
-                label_name_player2.TextColor = Color.Red;
+                label_name_player2.TextColor = Color.FromHex("#F03838"); //Red 
                 label_name_player1.TextColor = Color.Gray;
 
-                framePointX.BorderColor = Color.Red;
+                framePointX.BorderColor = Color.FromHex("#F03838"); //Red 
                 framePointO.BorderColor = Color.Gray;
             }
             else if (step == 7)
             {
                 
-                label_name_player1.TextColor = Color.Blue;
+                label_name_player1.TextColor = Color.FromHex("#27B7D5");  // Blue
                 label_name_player2.TextColor = Color.Gray;
 
-                framePointO.BorderColor = Color.Blue;
+                framePointO.BorderColor = Color.FromHex("#27B7D5");  // Blue
                 framePointX.BorderColor = Color.Gray;
             }
             else if (step == 8)
             {
                 
-                label_name_player2.TextColor = Color.Red;
+                label_name_player2.TextColor = Color.FromHex("#F03838"); //Red 
                 label_name_player1.TextColor = Color.Gray;
 
-                framePointX.BorderColor = Color.Red;
+                framePointX.BorderColor = Color.FromHex("#F03838"); //Red 
                 framePointO.BorderColor = Color.Gray;
             }
         }
@@ -402,16 +402,25 @@ namespace GridExample
                 var duration = TimeSpan.FromMilliseconds(200);
                 Vibration.Vibrate(duration);
 
-                var Player_O = new Label
+                var Player_O = new Image
                 {
-                    Text = "O",
+                    WidthRequest = 80,
                     VerticalOptions = LayoutOptions.CenterAndExpand,
                     HorizontalOptions = LayoutOptions.CenterAndExpand,
+                    Source = "o2.png"
                 };
 
-                Device.OnPlatform(iOS: () => Player_O.Font = Font.OfSize("AgentOrange", NamedSize.Large));
-                Device.OnPlatform(Android: () => Player_O.Font = Font.OfSize("Font/AgentOrange.ttf#Agent Orange", NamedSize.Large));
-                Player_O.FontSize = 75;
+                //var Player_O = new Label
+                //{
+                //    Text = "O",
+                //    VerticalOptions = LayoutOptions.CenterAndExpand,
+                //    HorizontalOptions = LayoutOptions.CenterAndExpand,
+                //};
+
+
+                //Device.OnPlatform(iOS: () => Player_O.Font = Font.OfSize("AgentOrange", NamedSize.Large));
+                //Device.OnPlatform(Android: () => Player_O.Font = Font.OfSize("Font/AgentOrange.ttf#Agent Orange", NamedSize.Large));
+                //Player_O.FontSize = 75;
 
                 box.IsVisible = false;
                 box.IsEnabled = false;
@@ -424,8 +433,8 @@ namespace GridExample
                 left1 = left;
                 top1 = top;
 
-                Player_O.TextColor = Color.FromHex("#2ECCFA"); // Blue
-                
+                //Player_O.TextColor = Color.FromHex("#2ECCFA"); // Blue
+
                 box.Color = Color.Blue;
                
             }
@@ -434,17 +443,14 @@ namespace GridExample
                 var duration = TimeSpan.FromMilliseconds(200);
                 Vibration.Vibrate(duration);
 
-                var Player_X = new Label
+                var Player_X = new Image
                 {
-                    Text = "X",
+                    WidthRequest = 80,
                     VerticalOptions = LayoutOptions.CenterAndExpand,
-                    HorizontalOptions = LayoutOptions.CenterAndExpand
+                    HorizontalOptions = LayoutOptions.CenterAndExpand,
+                    Source = "x.png"
                 };
-
-                Device.OnPlatform(iOS: () => Player_X.Font = Font.OfSize("AgentOrange", NamedSize.Large));
-                Device.OnPlatform(Android: () => Player_X.Font = Font.OfSize("Font/AgentOrange.ttf#Agent Orange", NamedSize.Large));
-                Player_X.FontSize = 75;
-
+              
                 box.IsVisible = false;
                 box.IsEnabled = false;
 
@@ -456,9 +462,6 @@ namespace GridExample
                 left2 = left;
                 top2 = top;
 
-
-                Player_X.TextColor = Color.Red;
-
                 box.Color = Color.Red;
 
             }
@@ -467,17 +470,15 @@ namespace GridExample
                 var duration = TimeSpan.FromMilliseconds(200);
                 Vibration.Vibrate(duration);
 
-                var Player_O = new Label
+                var Player_O = new Image
                 {
-                    Text = "O",
+                    WidthRequest = 80,
                     VerticalOptions = LayoutOptions.CenterAndExpand,
-                    HorizontalOptions = LayoutOptions.CenterAndExpand
+                    HorizontalOptions = LayoutOptions.CenterAndExpand,
+                    Source = "o2.png"
                 };
 
-                Device.OnPlatform(iOS: () => Player_O.Font = Font.OfSize("AgentOrange", NamedSize.Large));
-                Device.OnPlatform(Android: () => Player_O.Font = Font.OfSize("Font/AgentOrange.ttf#Agent Orange", NamedSize.Large));
-                Player_O.FontSize = 75;
-
+               
                 box.IsVisible = false;
                 box.IsEnabled = false;
 
@@ -489,8 +490,6 @@ namespace GridExample
                 left3 = left;
                 top3 = top;
 
-                Player_O.TextColor = Color.FromHex("#2ECCFA"); // Blue
-
                 box.Color = Color.Blue;
 
             }
@@ -499,16 +498,14 @@ namespace GridExample
                 var duration = TimeSpan.FromMilliseconds(200);
                 Vibration.Vibrate(duration);
 
-                var Player_X = new Label
+                var Player_X = new Image
                 {
-                    Text = "X",
+                    WidthRequest = 80,
                     VerticalOptions = LayoutOptions.CenterAndExpand,
-                    HorizontalOptions = LayoutOptions.CenterAndExpand
+                    HorizontalOptions = LayoutOptions.CenterAndExpand,
+                    Source = "x.png"
                 };
 
-                Device.OnPlatform(iOS: () => Player_X.Font = Font.OfSize("AgentOrange", NamedSize.Large));
-                Device.OnPlatform(Android: () => Player_X.Font = Font.OfSize("Font/AgentOrange.ttf#Agent Orange", NamedSize.Large));
-                Player_X.FontSize = 75;
 
                 box.IsVisible = false;
                 box.IsEnabled = false;
@@ -521,8 +518,6 @@ namespace GridExample
                 left4 = left;
                 top4 = top;
 
-                Player_X.TextColor = Color.Red;
-
                 box.Color = Color.Red;
 
             }
@@ -531,16 +526,14 @@ namespace GridExample
                 var duration = TimeSpan.FromMilliseconds(200);
                 Vibration.Vibrate(duration);
 
-                var Player_O = new Label
+                var Player_O = new Image
                 {
-                    Text = "O",
+                    WidthRequest = 80,
                     VerticalOptions = LayoutOptions.CenterAndExpand,
-                    HorizontalOptions = LayoutOptions.CenterAndExpand
+                    HorizontalOptions = LayoutOptions.CenterAndExpand,
+                    Source = "o2.png"
                 };
 
-                Device.OnPlatform(iOS: () => Player_O.Font = Font.OfSize("AgentOrange", NamedSize.Large));
-                Device.OnPlatform(Android: () => Player_O.Font = Font.OfSize("Font/AgentOrange.ttf#Agent Orange", NamedSize.Large));
-                Player_O.FontSize = 75;
 
                 box.IsVisible = false;
                 box.IsEnabled = false;
@@ -553,8 +546,6 @@ namespace GridExample
                 left5 = left;
                 top5 = top;
 
-                Player_O.TextColor = Color.FromHex("#2ECCFA"); // Blue
-
                 box.Color = Color.Blue;
 
             }
@@ -563,16 +554,13 @@ namespace GridExample
                 var duration = TimeSpan.FromMilliseconds(200);
                 Vibration.Vibrate(duration);
 
-                var Player_X = new Label
+                var Player_X = new Image
                 {
-                    Text = "X",
+                    WidthRequest = 80,
                     VerticalOptions = LayoutOptions.CenterAndExpand,
-                    HorizontalOptions = LayoutOptions.CenterAndExpand
+                    HorizontalOptions = LayoutOptions.CenterAndExpand,
+                    Source = "x.png"
                 };
-
-                Device.OnPlatform(iOS: () => Player_X.Font = Font.OfSize("AgentOrange", NamedSize.Large));
-                Device.OnPlatform(Android: () => Player_X.Font = Font.OfSize("Font/AgentOrange.ttf#Agent Orange", NamedSize.Large));
-                Player_X.FontSize = 75;
 
                 box.IsVisible = false;
                 box.IsEnabled = false;
@@ -585,8 +573,6 @@ namespace GridExample
                 left6 = left;
                 top6 = top;
 
-                Player_X.TextColor = Color.Red;
-
                 box.Color = Color.Red;
 
             }
@@ -595,16 +581,14 @@ namespace GridExample
                 var duration = TimeSpan.FromMilliseconds(200);
                 Vibration.Vibrate(duration);
 
-                var Player_O = new Label
+                var Player_O = new Image
                 {
-                    Text = "O",
+                    WidthRequest = 80,
                     VerticalOptions = LayoutOptions.CenterAndExpand,
-                    HorizontalOptions = LayoutOptions.CenterAndExpand
+                    HorizontalOptions = LayoutOptions.CenterAndExpand,
+                    Source = "o2.png"
                 };
-
-                Device.OnPlatform(iOS: () => Player_O.Font = Font.OfSize("AgentOrange", NamedSize.Large));
-                Device.OnPlatform(Android: () => Player_O.Font = Font.OfSize("Font/AgentOrange.ttf#Agent Orange", NamedSize.Large));
-                Player_O.FontSize = 75;
+                
 
                 box.IsVisible = false;
                 box.IsEnabled = false;
@@ -617,8 +601,6 @@ namespace GridExample
                 left7 = left;
                 top7 = top;
 
-                Player_O.TextColor = Color.FromHex("#2ECCFA"); // Blue
-
                 box.Color = Color.Blue;
             }
             else if (step == 7)
@@ -626,16 +608,13 @@ namespace GridExample
                 var duration = TimeSpan.FromMilliseconds(200);
                 Vibration.Vibrate(duration);
 
-                var Player_X = new Label
+                var Player_X = new Image
                 {
-                    Text = "X",
+                    WidthRequest = 80,
                     VerticalOptions = LayoutOptions.CenterAndExpand,
-                    HorizontalOptions = LayoutOptions.CenterAndExpand
+                    HorizontalOptions = LayoutOptions.CenterAndExpand,
+                    Source = "x.png"
                 };
-
-                Device.OnPlatform(iOS: () => Player_X.Font = Font.OfSize("AgentOrange", NamedSize.Large));
-                Device.OnPlatform(Android: () => Player_X.Font = Font.OfSize("Font/AgentOrange.ttf#Agent Orange", NamedSize.Large));
-                Player_X.FontSize = 75;
 
                 box.IsVisible = false;
                 box.IsEnabled = false;
@@ -648,8 +627,6 @@ namespace GridExample
                 left8 = left;
                 top8 = top;
 
-                Player_X.TextColor = Color.Red;
-
                 box.Color = Color.Red;
             }
             else if (step == 8)
@@ -657,16 +634,13 @@ namespace GridExample
                 var duration = TimeSpan.FromMilliseconds(200);
                 Vibration.Vibrate(duration);
 
-                var Player_O = new Label
+                var Player_O = new Image
                 {
-                    Text = "O",
+                    WidthRequest = 80,
                     VerticalOptions = LayoutOptions.CenterAndExpand,
-                    HorizontalOptions = LayoutOptions.CenterAndExpand
+                    HorizontalOptions = LayoutOptions.CenterAndExpand,
+                    Source = "o2.png"
                 };
-
-                Device.OnPlatform(iOS: () => Player_O.Font = Font.OfSize("AgentOrange", NamedSize.Large));
-                Device.OnPlatform(Android: () => Player_O.Font = Font.OfSize("Font/AgentOrange.ttf#Agent Orange", NamedSize.Large));
-                Player_O.FontSize = 75;
 
                 box.IsVisible = false;
                 box.IsEnabled = false;
@@ -678,8 +652,6 @@ namespace GridExample
                // layout9 = layout;
                 left9 = left;
                 top9 = top;
-
-                Player_O.TextColor = Color.FromHex("#2ECCFA"); // Blue
 
                 box.Color = Color.Blue;
             }

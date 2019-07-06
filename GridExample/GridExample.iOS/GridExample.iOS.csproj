@@ -165,4 +165,13 @@
   <ItemGroup>
     <BundleResource Include="Resources\btnback.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\o2.png" />
+  </ItemGroup>
 </Project>

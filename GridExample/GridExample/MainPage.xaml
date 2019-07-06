@@ -6,7 +6,7 @@
              xmlns:ffimageloading="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms">
 
     <AbsoluteLayout >
-        <Image x:Name="BgImage" Source="low.jpg"
+        <Image x:Name="BgImage" Source="low2.jpg"
                Aspect="AspectFill"
                AbsoluteLayout.LayoutBounds="0.0, 0.0, 1.0, 1.0"
                AbsoluteLayout.LayoutFlags="All"
@@ -44,7 +44,7 @@
                             HorizontalOptions="Center"
                             FontSize="25"
                             FontAttributes="Italic"
-                            TextColor="#F8B300"
+                            TextColor="#27B7D5"
                             x:Name="Title"
                            Grid.Column="1"
                             Style="{StaticResource Font-1}">

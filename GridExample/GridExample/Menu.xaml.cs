@@ -71,7 +71,7 @@ namespace GridExample
 
         private void ClickbtnCredits(object sender, EventArgs e)
         {
-            DisplayAlert("Credits", "Rhadimer Antigua Sánchez TicTacToe! Version 0.1", "OK");
+            DisplayAlert("Credits", "Rhadimer Antigua Sánchez TicTacToe! Version 1.0", "OK");
         }
     }
 }

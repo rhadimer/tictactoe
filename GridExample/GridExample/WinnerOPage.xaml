@@ -5,7 +5,7 @@
     <ContentPage.Content>
 
         <AbsoluteLayout HorizontalOptions="Center">
-            <Image x:Name="BgImage" Source="low.jpg"
+            <Image x:Name="BgImage" Source="low2.jpg"
                Aspect="AspectFill"
                AbsoluteLayout.LayoutBounds="0.0, 0.0, 1.0, 1.0"
                AbsoluteLayout.LayoutFlags="All"/>
@@ -34,12 +34,11 @@
                        TextColor="#F8B300"
                        Style="{StaticResource Font-1}"/>
 
-                <Label Text="O"
-                        FontSize="50"
-                        FontAttributes="Bold"
+                <Image 
+                        WidthRequest="80"
                         HorizontalOptions="Center"
-                       TextColor="#F8B300"
-                       Style="{StaticResource Font-1}"/>
+                        Source="o2.png"
+                       />
 
                 <Label Text=""
                         FontSize="30"
@@ -284,9 +283,9 @@
                         WidthRequest="300"
                         HorizontalOptions="Center"
                         Text="play again"
-                        TextColor="White"
+                        TextColor="#F8B300"
                         Margin="5"
-                        BorderColor="#F8B300"
+                        BorderColor="#27B7D5"
                         BorderWidth="5"
                         x:Name="btnPlayAgain"
                         Clicked="btnPlayAgain_Click">
@@ -299,9 +298,9 @@
                         WidthRequest="300"
                         HorizontalOptions="Center"
                         Text="return to the menu"
-                        TextColor="White"
+                        TextColor="#F8B300"
                         Margin="5"
-                        BorderColor="#F8B300"
+                        BorderColor="#27B7D5"
                         BorderWidth="5"
                         x:Name="btnReturMenu"
                         Clicked="btnReturMenu_Click">
