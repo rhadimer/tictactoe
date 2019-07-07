@@ -19,14 +19,14 @@
                        TextColor="White"
                        Style="{StaticResource Font-2}"/>
 
-                <Label Text="Nobody"
+                <Label Text="Game"
                         FontSize="50"
                         FontAttributes="Bold"
                         HorizontalOptions="Center"
                        TextColor="#F8B300"
                        Style="{StaticResource Font-1}"/>
 
-                <Label Text="Won"
+                <Label Text="Tied"
                         FontSize="50"
                         FontAttributes="Bold"
                         HorizontalOptions="Center"
@@ -310,7 +310,7 @@
                         HeightRequest="46"
                         WidthRequest="300"
                         HorizontalOptions="Center"
-                        Text="return to the menu"
+                        Text="Main menu"
                         TextColor="#F8B300"
                         Margin="5"
                         BorderColor="#27B7D5"

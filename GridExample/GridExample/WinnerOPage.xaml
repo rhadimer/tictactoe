@@ -297,7 +297,7 @@
                         HeightRequest="46"
                         WidthRequest="300"
                         HorizontalOptions="Center"
-                        Text="return to the menu"
+                        Text="Main menu"
                         TextColor="#F8B300"
                         Margin="5"
                         BorderColor="#27B7D5"

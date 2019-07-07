@@ -33,6 +33,21 @@
                        TextColor="#F8B300"
                        Style="{StaticResource Font-1}"/>
 
+                <StackLayout Orientation="Horizontal" 
+                             HorizontalOptions="Center">
+                    <Image 
+                        WidthRequest="80"
+                        HorizontalOptions="FillAndExpand"
+                        Source="o2.png"
+                       />
+
+                    <Image 
+                        WidthRequest="80"
+                        HorizontalOptions="FillAndExpand"
+                         Source="x.png"
+                       />
+                </StackLayout>
+
                 <Label Text=""
                         FontSize="30"
                         FontAttributes="Bold"
