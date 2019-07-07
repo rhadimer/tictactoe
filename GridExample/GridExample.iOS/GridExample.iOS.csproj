@@ -73,6 +73,7 @@
     <BundleResource Include="Resources\Font\TheBredaDemo.otf" />
     <BundleResource Include="Resources\Font\DSDIGI.TTF" />
     <BundleResource Include="Resources\Font\digital-7.ttf" />
+    <BundleResource Include="Resources\Font\FunnyKid.ttf" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
@@ -173,5 +174,11 @@
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\o2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\low3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\share.png" />
   </ItemGroup>
 </Project>

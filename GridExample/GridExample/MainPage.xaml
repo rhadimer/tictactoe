@@ -6,7 +6,7 @@
              xmlns:ffimageloading="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms">
 
     <AbsoluteLayout >
-        <Image x:Name="BgImage" Source="low2.jpg"
+        <Image x:Name="BgImage" 
                Aspect="AspectFill"
                AbsoluteLayout.LayoutBounds="0.0, 0.0, 1.0, 1.0"
                AbsoluteLayout.LayoutFlags="All"
@@ -51,15 +51,15 @@
                     </Label>
 
 
-                    <Image x:Name="btnSetting"
+                    <Image x:Name="btnShare"
                                  Grid.Column="2"
-                                 Source="btnsetting.png"
+                                 Source="share.png"
                                  HorizontalOptions="FillAndExpand"
                                   HeightRequest="35"
                                  WidthRequest="35">
                         
                         <Image.GestureRecognizers>
-                            <TapGestureRecognizer Tapped="OnTapped_btnSetting"/>
+                            <TapGestureRecognizer Tapped="OnTapped_btnShare"/>
                         </Image.GestureRecognizers>
                         
                     </Image>

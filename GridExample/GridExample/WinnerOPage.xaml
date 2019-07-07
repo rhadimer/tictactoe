@@ -5,7 +5,7 @@
     <ContentPage.Content>
 
         <AbsoluteLayout HorizontalOptions="Center">
-            <Image x:Name="BgImage" Source="low2.jpg"
+            <Image x:Name="BgImage" 
                Aspect="AspectFill"
                AbsoluteLayout.LayoutBounds="0.0, 0.0, 1.0, 1.0"
                AbsoluteLayout.LayoutFlags="All"/>

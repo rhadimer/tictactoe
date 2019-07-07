@@ -62,6 +62,9 @@ namespace GridExample
         private int top8 ;
         private int top9 ;
 
+      //Menu main = new Menu();
+        public static bool theme1 = Menu.theme1;
+        public static bool theme2 = Menu.theme1;
 
         public MainPage()
         {
@@ -75,7 +78,8 @@ namespace GridExample
 
             //Sound();
             //DisplayAlert("Warning!", "This game must be played with two people", "OK");
-
+            ConfigTheme();
+            
         }
 
         private void OnTapped_box0_0(object sender, EventArgs e)
@@ -699,6 +703,7 @@ namespace GridExample
         private void Initializer()
         {
             InitializeComponent();
+            ConfigTheme();
             label_point_player1.Text = pointsPlayer1.ToString();
             label_point_player2.Text = pointsPlayer2.ToString();
         }
@@ -714,9 +719,31 @@ namespace GridExample
             
         }
 
-        private void OnTapped_btnSetting(object sender, EventArgs e)
+        private async void OnTapped_btnShare(object sender, EventArgs e)
         {
-            //...
+            await Share.RequestAsync(new ShareTextRequest
+            {
+                Uri = "http://rhadimer.com",
+                Title = "Official website of the author of Tic Tac Toe!"
+            });
         }
+
+        public void ConfigTheme()
+        {
+
+
+            if (Menu.theme1 == true)
+            {
+                BgImage.Source = "low.jpg";
+                Menu.theme2 = false;
+            }
+            else if (Menu.theme2 == true)
+            {
+                BgImage.Source = "low3.jpg";
+                Menu.theme1 = false;
+            }
+
+        }
+
     }
 }

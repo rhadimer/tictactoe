@@ -94,6 +94,7 @@
     <AndroidAsset Include="Font\TheBredanDemo.otf" />
     <AndroidAsset Include="Font\DSDIGI.TTF" />
     <AndroidAsset Include="Font\digital-7.ttf" />
+    <AndroidAsset Include="Font\FunnyKid.ttf" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
     <None Include="Properties\AndroidManifest.xml" />
@@ -116,7 +117,9 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\icon.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\low3.jpg" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\GridExample\GridExample.csproj">
       <Project>{8DA32368-AEB1-4687-A68F-F508EF4C7F44}</Project>
@@ -164,6 +167,9 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable-xxxhdpi\icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\share.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

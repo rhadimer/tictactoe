@@ -3,8 +3,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="GridExample.Menu">
     <ContentPage.Content>
-        <AbsoluteLayout HorizontalOptions="Center">
-            <Image x:Name="BgImage" Source="low2.jpg"
+        <AbsoluteLayout HorizontalOptions="Center"
+                        x:Name="ASLayout">
+            <Image x:Name="BgImage" 
                Aspect="AspectFill"
                AbsoluteLayout.LayoutBounds="0.0, 0.0, 1.0, 1.0"
                AbsoluteLayout.LayoutFlags="All"
@@ -20,18 +21,20 @@
                        Style="{StaticResource Font-2}"/>
 
                 <Label Text="Tic Tac"
-                        FontSize="50"
+                        
                         FontAttributes="Italic"
                         HorizontalOptions="Center"
-                       TextColor="#F8B300"
-                       Style="{StaticResource Font-1}"/>
+                       
+                       x:Name="TitleName1"
+                       />
 
                 <Label Text="Toe!"
-                        FontSize="50"
+                        
                         FontAttributes="Italic"
                         HorizontalOptions="Center"
-                       TextColor="#F8B300"
-                       Style="{StaticResource Font-1}"/>
+                       
+                       x:Name="TitleName2"
+                       />
 
                 <StackLayout Orientation="Horizontal" 
                              HorizontalOptions="Center">
@@ -80,7 +83,8 @@
                         Margin="5"
                         BorderColor="#27B7D5"
                         BorderWidth="5"
-                        x:Name="btnConfig">
+                        x:Name="btnConfig"
+                        Clicked="btnConfigTheme">
                 </Button>
 
                 <Button

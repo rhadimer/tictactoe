@@ -15,10 +15,16 @@ namespace GridExample
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Menu : ContentPage
     {
+        public static bool theme1 = true;
+        public static  bool theme2 = false;
+        public static string nameTheme1 = "low.jpg";
+        public static string nameTheme2 = "low3.jpg";
+
         public Menu()
         {
             InitializeComponent();
             Sound("GreatLittleChallenge.ogg",true);
+            ConfigTheme();
         }
 
         private async void ClickbtnNewGame(object sender, EventArgs e)
@@ -73,5 +79,66 @@ namespace GridExample
         {
             DisplayAlert("Credits", "Rhadimer Antigua Sánchez TicTacToe! Version 1.0", "OK");
         }
+
+        private async void btnConfigTheme(object sender, EventArgs e)
+        {
+            string action = await DisplayActionSheet("Choose a theme", "Cancel", null, "Theme 1", "Theme 2");
+
+            if (action == "Theme 1")
+            {
+                theme1 = true;
+                theme2 = false;
+                ConfigTheme();
+            }
+            else if (action == "Theme 2")
+            {
+                theme2 = true;
+                theme1 = false;
+                ConfigTheme();
+            }
+        }
+
+        [Obsolete]
+        public  void ConfigTheme()
+        {
+
+            if (theme1 == true)
+            {
+                BgImage.Source = "low.jpg";
+                theme2 = false;
+                Device.OnPlatform(iOS: () => TitleName1.Font = Font.OfSize("AgentOrange", NamedSize.Large));
+                Device.OnPlatform(Android: () => TitleName1.Font = Font.OfSize("Font/AgentOrange.ttf#Agent Orange", NamedSize.Large));
+
+                Device.OnPlatform(iOS: () => TitleName2.Font = Font.OfSize("AgentOrange", NamedSize.Large));
+                Device.OnPlatform(Android: () => TitleName2.Font = Font.OfSize("Font/AgentOrange.ttf#Agent Orange", NamedSize.Large));
+
+                TitleName1.TextColor = Color.FromHex("#F8B300");
+                TitleName2.TextColor = Color.FromHex("#F8B300");
+
+                TitleName1.FontSize = 50;
+                TitleName2.FontSize = 50;
+
+
+            }
+            else if (theme2 == true)
+            {
+                BgImage.Source = "low3.jpg";
+                theme1 = false;
+                Device.OnPlatform(iOS: () => TitleName1.Font = Font.OfSize("FunnyKid", NamedSize.Large));
+                Device.OnPlatform(Android: () => TitleName1.Font = Font.OfSize("Font/FunnyKid.ttf#Agent Orange", NamedSize.Large));
+
+                Device.OnPlatform(iOS: () => TitleName2.Font = Font.OfSize("FunnyKid", NamedSize.Large));
+                Device.OnPlatform(Android: () => TitleName2.Font = Font.OfSize("Font/FunnyKid.ttf#Agent Orange", NamedSize.Large));
+
+                TitleName1.TextColor = Color.FromHex("#8007AA");
+                TitleName2.TextColor = Color.FromHex("#8007AA");
+
+                TitleName1.FontSize = 80;
+                TitleName2.FontSize = 80;
+            }
+
+
+        }
     }
+
 }

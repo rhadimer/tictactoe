@@ -16,7 +16,7 @@ namespace GridExample
         {
 
             InitializeComponent();
-
+            ConfigTheme();
         }
 
         private Image Move1 = new Image();
@@ -190,6 +190,25 @@ namespace GridExample
         public void Init()
         {
             InitializeComponent();
+            ConfigTheme();
+        }
+
+        public void ConfigTheme()
+        {
+
+
+            if (Menu.theme1 == true)
+            {
+                BgImage.Source = "low.jpg";
+                Menu.theme2 = false;
+            }
+            else if (Menu.theme2 == true)
+            {
+                BgImage.Source = "low3.jpg";
+                Menu.theme1 = false;
+            }
+
+
         }
 
     }

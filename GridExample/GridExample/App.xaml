@@ -49,6 +49,17 @@
                 </Setter>
             </Style>
 
+            <Style x:Key="Font-4" TargetType="Label">
+                <Setter Property="Label.FontFamily">
+                    <OnPlatform x:TypeArguments="x:String">
+                        <!--<OnPlatform.iOS>AgentOrange</OnPlatform.iOS>
+                        <OnPlatform.Android>font/AgentOrange.ttf#AgentOrange</OnPlatform.Android>-->
+                        <On Platform="iOS" Value="FunnyKid" />
+                        <On Platform="Android" Value="Font/FunnyKid.ttf#FunnyKid" />
+                    </OnPlatform>
+                </Setter>
+            </Style>
+
         </ResourceDictionary>
         
     </Application.Resources>
