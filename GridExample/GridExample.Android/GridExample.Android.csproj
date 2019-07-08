@@ -54,6 +54,7 @@
     <EmbedAssembliesIntoApk>true</EmbedAssembliesIntoApk>
     <AndroidCreatePackagePerAbi>true</AndroidCreatePackagePerAbi>
     <MandroidI18n />
+    <AndroidLinkMode>None</AndroidLinkMode>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Mono.Android" />
