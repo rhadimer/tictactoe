@@ -37,6 +37,7 @@
                         WidthRequest="80"
                         HorizontalOptions="Center"
                          Source="x.png"
+                    x:Name="x"
                        />
 
                 <Label Text=""

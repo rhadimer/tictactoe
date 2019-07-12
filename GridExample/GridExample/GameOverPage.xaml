@@ -24,14 +24,16 @@
                         FontAttributes="Bold"
                         HorizontalOptions="Center"
                        TextColor="#F8B300"
-                       Style="{StaticResource Font-1}"/>
+                       Style="{StaticResource Font-1}"
+                       x:Name="labelGame"/>
 
                 <Label Text="Tied"
                         FontSize="50"
                         FontAttributes="Bold"
                         HorizontalOptions="Center"
                        TextColor="#F8B300"
-                       Style="{StaticResource Font-1}"/>
+                       Style="{StaticResource Font-1}"
+                       x:Name="labelTied"/>
 
                 <StackLayout Orientation="Horizontal" 
                              HorizontalOptions="Center">
@@ -39,12 +41,14 @@
                         WidthRequest="80"
                         HorizontalOptions="FillAndExpand"
                         Source="o2.png"
+                        x:Name="o2"
                        />
                     
                     <Image 
                         WidthRequest="80"
                         HorizontalOptions="FillAndExpand"
                          Source="x.png"
+                        x:Name="x"
                        />
                 </StackLayout>
 

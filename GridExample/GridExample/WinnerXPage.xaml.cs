@@ -179,12 +179,13 @@ namespace GridExample
         private async void btnPlayAgain_Click(object sender, EventArgs e)
         {
             InitializeComponent();
-
+            await x.RotateYTo(360, 600, Easing.SinIn);
             await Navigation.PopModalAsync();
         }
 
         private async void btnReturMenu_Click(object sender, EventArgs e)
         {
+            await x.RotateYTo(360, 600, Easing.SinIn);
             await Navigation.PushModalAsync(new Menu());
         }
 

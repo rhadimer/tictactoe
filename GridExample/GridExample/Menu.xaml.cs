@@ -23,14 +23,19 @@ namespace GridExample
         public Menu()
         {
             InitializeComponent();
+            //x.ScaleTo(1.5, 10000, Easing.BounceOut);
+            //o2.ScaleTo(1.5, 10000, Easing.BounceOut);
             Sound("GreatLittleChallenge.ogg",true);
             ConfigTheme();
+            
         }
 
         private async void ClickbtnNewGame(object sender, EventArgs e)
         {
             //var soundTap = new ConfigGame();
             //soundTap.Sound("bubblepop.mp3",false);
+           await x.RotateYTo(360, 600, Easing.SinIn);
+           await o2.RotateYTo(360, 600, Easing.SinIn);
             await Navigation.PushModalAsync(new MainPage());
         }
 

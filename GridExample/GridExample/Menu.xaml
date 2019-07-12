@@ -42,12 +42,14 @@
                         WidthRequest="80"
                         HorizontalOptions="FillAndExpand"
                         Source="o2.png"
+                        x:Name="o2"
                        />
 
                     <Image 
                         WidthRequest="80"
                         HorizontalOptions="FillAndExpand"
                          Source="x.png"
+                        x:Name="x"
                        />
                 </StackLayout>
 

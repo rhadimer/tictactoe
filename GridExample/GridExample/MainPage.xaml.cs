@@ -312,7 +312,10 @@ namespace GridExample
 
                 framePointX.BorderColor = Color.FromHex("#F03838"); //Red 
                 framePointO.BorderColor = Color.Gray;
-                
+
+                label_name_player2.RotateYTo(360,600, Easing.SinIn);
+
+
             }
             else if (step == 1)
             {  
@@ -321,6 +324,9 @@ namespace GridExample
 
                 framePointO.BorderColor = Color.FromHex("#27B7D5");  // Blue
                 framePointX.BorderColor = Color.Gray;
+
+                label_name_player1.RotateYTo(360, 600, Easing.SinIn);
+
             }
             else if (step == 2)
             {               
@@ -329,6 +335,8 @@ namespace GridExample
 
                 framePointX.BorderColor = Color.FromHex("#F03838"); //Red 
                 framePointO.BorderColor = Color.Gray;
+
+                label_name_player2.RotateYTo(360, 600, Easing.SinIn);
             }
             else if (step == 3)
             {
@@ -338,6 +346,8 @@ namespace GridExample
 
                 framePointO.BorderColor = Color.FromHex("#27B7D5");  // Blue
                 framePointX.BorderColor = Color.Gray;
+
+                label_name_player1.RotateYTo(360, 600, Easing.SinIn);
             }
             else if (step == 4)
             {
@@ -347,6 +357,8 @@ namespace GridExample
 
                 framePointX.BorderColor = Color.FromHex("#F03838"); //Red 
                 framePointO.BorderColor = Color.Gray;
+
+                label_name_player2.RotateYTo(360, 600, Easing.SinIn);
             }
             else if (step == 5)
             {
@@ -356,6 +368,8 @@ namespace GridExample
 
                 framePointO.BorderColor = Color.FromHex("#27B7D5");  // Blue
                 framePointX.BorderColor = Color.Gray;
+
+                label_name_player1.RotateYTo(360, 600, Easing.SinIn);
             }
             else if (step == 6)
             {
@@ -365,6 +379,8 @@ namespace GridExample
 
                 framePointX.BorderColor = Color.FromHex("#F03838"); //Red 
                 framePointO.BorderColor = Color.Gray;
+
+                label_name_player2.RotateYTo(360, 600, Easing.SinIn);
             }
             else if (step == 7)
             {
@@ -374,6 +390,8 @@ namespace GridExample
 
                 framePointO.BorderColor = Color.FromHex("#27B7D5");  // Blue
                 framePointX.BorderColor = Color.Gray;
+
+                label_name_player1.RotateYTo(360, 600, Easing.SinIn);
             }
             else if (step == 8)
             {
@@ -383,6 +401,8 @@ namespace GridExample
 
                 framePointX.BorderColor = Color.FromHex("#F03838"); //Red 
                 framePointO.BorderColor = Color.Gray;
+
+                label_name_player2.RotateYTo(360, 600, Easing.SinIn);
             }
         }
 
@@ -432,6 +452,9 @@ namespace GridExample
                 GridGame.Children.Add(Player_O, left, top);
                 layout.Children.Add(Player_O);
 
+                Player_O.ScaleTo(1.2, 2000, Easing.BounceOut);
+                
+
                 move1 = Player_O;
                 //layout1 = layout;
                 left1 = left;
@@ -461,6 +484,8 @@ namespace GridExample
                 GridGame.Children.Add(Player_X, left, top);
                 layout.Children.Add(Player_X);
 
+                Player_X.ScaleTo(1.2, 2000, Easing.BounceOut);
+
                 move2 = Player_X;
                 //layout2 = layout;
                 left2 = left;
@@ -488,6 +513,8 @@ namespace GridExample
 
                 GridGame.Children.Add(Player_O, left, top);
                 layout.Children.Add(Player_O);
+
+                Player_O.ScaleTo(1.2, 2000, Easing.BounceOut);
 
                 move3 = Player_O;
                 //layout3 = layout;
@@ -517,6 +544,8 @@ namespace GridExample
                 GridGame.Children.Add(Player_X, left, top);
                 layout.Children.Add(Player_X);
 
+                Player_X.ScaleTo(1.2, 2000, Easing.BounceOut);
+
                 move4 = Player_X;
                 //layout4 = layout;
                 left4 = left;
@@ -545,6 +574,8 @@ namespace GridExample
                 GridGame.Children.Add(Player_O, left, top);
                 layout.Children.Add(Player_O);
 
+                Player_O.ScaleTo(1.2, 2000, Easing.BounceOut);
+
                 move5 = Player_O;
                // layout5 = layout;
                 left5 = left;
@@ -571,6 +602,8 @@ namespace GridExample
 
                 GridGame.Children.Add(Player_X, left, top);
                 layout.Children.Add(Player_X);
+
+                Player_X.ScaleTo(1.2, 2000, Easing.BounceOut);
 
                 move6 = Player_X;
                 //layout6 = layout;
@@ -600,6 +633,8 @@ namespace GridExample
                 GridGame.Children.Add(Player_O, left, top);
                 layout.Children.Add(Player_O);
 
+                Player_O.ScaleTo(1.2, 2000, Easing.BounceOut);
+
                 move7 = Player_O;
                 //layout7 = layout;
                 left7 = left;
@@ -626,6 +661,8 @@ namespace GridExample
                 GridGame.Children.Add(Player_X, left, top);
                 layout.Children.Add(Player_X);
 
+                Player_X.ScaleTo(1.2, 2000, Easing.BounceOut);
+
                 move8 = Player_X;
                 //layout8 = layout;
                 left8 = left;
@@ -651,6 +688,8 @@ namespace GridExample
 
                 GridGame.Children.Add(Player_O, left, top);
                 layout.Children.Add(Player_O);
+
+                Player_O.ScaleTo(1.2, 2000, Easing.BounceOut);
 
                 move9 = Player_O;
                // layout9 = layout;

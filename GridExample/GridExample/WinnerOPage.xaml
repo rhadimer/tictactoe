@@ -32,12 +32,14 @@
                         FontAttributes="Bold"
                         HorizontalOptions="Center"
                        TextColor="#F8B300"
-                       Style="{StaticResource Font-1}"/>
+                       Style="{StaticResource Font-1}"
+                       x:Name="p"/>
 
                 <Image 
                         WidthRequest="80"
                         HorizontalOptions="Center"
                         Source="o2.png"
+                         x:Name="o2"
                        />
 
                 <Label Text=""
